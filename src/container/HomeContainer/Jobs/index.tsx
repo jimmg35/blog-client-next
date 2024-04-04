@@ -51,7 +51,7 @@ const jobs = [
 
 const Jobs = () => {
   return (
-    <div className="rounded-2xl bg-base-100 bg-opacity-60 p-6 ">
+    <div className="rounded-2xl p-6 border border-error">
       <div className="flex items-center text-sm font-semibold ">
         <BriefcaseIcon className="w-6 h-6" />
         <span className="ml-3">Work</span>
@@ -59,23 +59,18 @@ const Jobs = () => {
       <ol className="mt-6 space-y-4">
         {jobs.map((job, index) => (
           <li className="flex gap-4" key={index}>
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative mt-1 flex h-12 w-12 shadow-lg flex-none items-center justify-center rounded-full">
               {job.icon}
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
-              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+              <dd className="w-full flex-none text-sm font-bold ">
                 {job.company}
               </dd>
               <dt className="sr-only">Role</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-                {job.role}
-              </dd>
+              <dd className="text-xs">{job.role}</dd>
               <dt className="sr-only">Date</dt>
-              <dd
-                className="ml-auto text-xs text-zinc-500 dark:text-zinc-500"
-                aria-label="2022 until Present"
-              >
+              <dd className="ml-auto text-xs " aria-label="2022 until Present">
                 <time>{job.start}</time> <span aria-hidden="true">—</span>{' '}
                 <time>{job.end}</time>
               </dd>
@@ -83,12 +78,12 @@ const Jobs = () => {
           </li>
         ))}
       </ol>
-
       <a
         className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full"
         href="https://www.linkedin.com/in/jimmg35/"
+        target="_blank"
       >
-        More on{' '}
+        Checkout my{' '}
         <svg
           id="LinkedIn_24"
           width="24"

@@ -1,5 +1,6 @@
 import React from 'react'
 import ArticleWall from './ArticleWall'
+import Education from './Education'
 import ExternalLinks from './ExternalLinks'
 import Introduction from './Introduction'
 import Jobs from './Jobs'
@@ -28,6 +29,7 @@ const HomeContainer = () => {
               <div className="py-6 mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
                 <ArticleWall />
                 <div className="space-y-10 lg:pl-16 xl:pl-24">
+                  <Education />
                   <Jobs />
                 </div>
               </div>
