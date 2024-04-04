@@ -1,3 +1,5 @@
+import React from 'react'
+
 const photos = [
   { src: '/images/photo_wall/sea-0.jpg', rotate: true },
   { src: '/images/photo_wall/sea-1.jpg', rotate: false },

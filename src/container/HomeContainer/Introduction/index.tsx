@@ -20,10 +20,10 @@ const Introduction = () => {
         ></h1>
       </div>
       <p className="mt-6 prose text-justify font-normal">
-        I'm Jim, a self-motivated student developer with the actual experience
-        of over three years collaborating and working on multiple web-based
-        projects of different domains, mostly integrating GIS techniques into
-        the system, and providing a solution to the clients.
+        I&apos;m Jim, a self-motivated student developer with the actual
+        experience of over three years collaborating and working on multiple
+        web-based projects of different domains, mostly integrating GIS
+        techniques into the system, and providing a solution to the clients.
       </p>
       <p className="mt-6 prose text-justify">
         Passionate, hardworking programmer with experience in frontend

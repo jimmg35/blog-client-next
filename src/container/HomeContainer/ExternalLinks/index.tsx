@@ -96,6 +96,7 @@ const ExternalLinks = () => {
           className="group -m-1 p-1 fill-neutral-500"
           href={link.href}
           target="_blank"
+          rel="noreferrer"
         >
           {link.icon}
         </a>

@@ -5,12 +5,9 @@ import ClientCookiesProvider from '@/cookie'
 import ReduxProvider from '@/stores'
 import {
   AcademicCapIcon,
-  Bars3Icon,
   BriefcaseIcon,
-  ChevronDownIcon,
   DocumentTextIcon,
   NewspaperIcon,
-  SunIcon,
   UserIcon
 } from '@heroicons/react/24/solid'
 import React from 'react'

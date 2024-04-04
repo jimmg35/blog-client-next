@@ -1,13 +1,4 @@
-import {
-  AcademicCapIcon,
-  Bars3Icon,
-  BriefcaseIcon,
-  ChevronDownIcon,
-  DocumentTextIcon,
-  NewspaperIcon,
-  SunIcon,
-  UserIcon
-} from '@heroicons/react/24/solid'
+import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { cookies } from 'next/headers'
 import ThemeSwitcher from '../ThemeSwitcher'
