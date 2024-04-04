@@ -46,6 +46,7 @@ const config: Config = {
         light: {
           ...require('daisyui/src/theming/themes')['light'],
           primary: '#34D399'
+          // error: '#F4F4F5'
         },
         dark: {
           ...require('daisyui/src/theming/themes')['dark'],
@@ -53,6 +54,7 @@ const config: Config = {
           'base-100': '#252529',
           'base-200': '#18181B',
           'base-300': '#000000'
+          // error: '#27272C'
         }
       }
     ]
