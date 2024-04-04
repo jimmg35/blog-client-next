@@ -12,9 +12,10 @@ import {
 } from '@heroicons/react/24/solid'
 import React from 'react'
 import type { Metadata } from 'next'
+import { useTranslations } from 'next-intl'
 import { Noto_Sans_TC } from 'next/font/google'
 import { cookies } from 'next/headers'
-import './globals.css'
+import '../globals.css'
 
 const noto = Noto_Sans_TC({
   weight: ['400', '500', '800'],
@@ -47,17 +48,20 @@ const routes = [
 ]
 
 export default function RootLayout({
-  children
+  children,
+  params: { locale }
 }: Readonly<{
   children: React.ReactNode
+  params: { locale: string }
 }>) {
+  const t = useTranslations('Index')
   const theme = cookies().get('theme')
   return (
     <ReduxProvider>
       <ClientCookiesProvider value={cookies().getAll()}>
-        <html lang="en" data-theme={theme ? theme.value : 'light'}>
+        <html lang={locale} data-theme={theme ? theme.value : 'light'}>
           <head>
-            <title>{`I'm Jim`}</title>
+            <title>{t('tabTitle')}</title>
           </head>
           <body className={`${noto.className} bg-base-300`}>
             <Background />
