@@ -27,7 +27,7 @@ const Education = () => {
       <ol className="mt-6 space-y-4">
         {educations.map((edu, index) => (
           <li className="flex gap-4" key={index}>
-            <div className="relative mt-1 flex h-12 w-12 shadow-lg flex-none items-center justify-center rounded-full">
+            <div className="relative bg-base-100 border border-error mt-1 flex h-12 w-12 shadow-lg flex-none items-center justify-center rounded-full">
               <img className="w-8 h-8" src={edu.icon} />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
