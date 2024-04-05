@@ -1,7 +1,10 @@
 import React from 'react'
 import classNames from 'classnames'
+import { useLocale, useTranslations } from 'next-intl'
 
 const Introduction = () => {
+  const locale = useLocale()
+  const t = useTranslations('Introduction')
   return (
     <>
       <div className="avatar">
@@ -11,25 +14,18 @@ const Introduction = () => {
       </div>
 
       <div className="flex gap-2 text-4xl font-bold tracking-tight sm:text-5xl ">
-        <h1>A </h1>
+        <h1>{t('A')} </h1>
         <h1
           className={classNames({
             JobTitle: true,
-            'type-en': true
+            'type-en': locale === 'en',
+            'type-zh': locale === 'zh',
+            'type-ru': locale === 'ru'
           })}
         ></h1>
       </div>
-      <p className="mt-6 prose text-justify font-normal">
-        I&apos;m Jim, a self-motivated student developer with the actual
-        experience of over three years collaborating and working on multiple
-        web-based projects of different domains, mostly integrating GIS
-        techniques into the system, and providing a solution to the clients.
-      </p>
-      <p className="mt-6 prose text-justify">
-        Passionate, hardworking programmer with experience in frontend
-        frameworks such as React.js with Typescript and Tailwindcss, and Nest.js
-        for developing backend services.
-      </p>
+      <p className="mt-6 prose text-justify font-normal">{t('paragraph1')}</p>
+      <p className="mt-6 prose text-justify">{t('paragraph2')}</p>
     </>
   )
 }

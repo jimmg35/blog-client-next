@@ -8,5 +8,10 @@
     "Work": "工作經歷",
     "Articles": "文章",
     "Publications": "著作"
+  },
+  "Introduction": {
+    "A": "一個",
+    "paragraph1": "我是家浚，一位積極進取的開發人員，擁有三年多的實際經驗，在不同領域的多個基於Web的專案上進行協作和工作，主要將GIS技術整合到系統中，並為客戶提供解決方案。",
+    "paragraph2": "充滿熱情、勤奮的程式設計師，擁有前端框架經驗，例如使用 Typescript 和 Tailwindcss 的 React.js，以及用於開發後端服務的 Nest.js。"
   }
 }

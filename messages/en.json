@@ -8,5 +8,10 @@
     "Work": "Work",
     "Articles": "Articles",
     "Publications": "Publications"
+  },
+  "Introduction": {
+    "A": "A",
+    "paragraph1": "I'm Jim, a self-motivated student developer with the actual experience of over three years collaborating and working on multiple web-based projects of different domains, mostly integrating GIS techniques into the system, and providing a solution to the clients.",
+    "paragraph2": "Passionate, hardworking programmer with experience in frontend frameworks such as React.js with Typescript and Tailwindcss, and Nest.js for developing backend services."
   }
 }
