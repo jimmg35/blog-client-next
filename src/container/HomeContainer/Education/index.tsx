@@ -1,29 +1,30 @@
 import { AcademicCapIcon } from '@heroicons/react/24/solid'
 import React from 'react'
-
-const educations = [
-  {
-    company: 'National Taiwan Normal University',
-    role: 'Master in Geographic Information Science',
-    start: '2022',
-    end: 'Present',
-    icon: '/icons/ntnu.svg'
-  },
-  {
-    company: 'National Taiwan Normal University',
-    role: 'Bachelor in Geography',
-    start: '2022',
-    end: 'Present',
-    icon: '/icons/ntnu.svg'
-  }
-]
+import { useTranslations } from 'next-intl'
 
 const Education = () => {
+  const t = useTranslations('Educations')
+  const educations = [
+    {
+      company: t('graduate_school_name'),
+      role: t('graduate_major'),
+      start: t('graduate_start_year'),
+      end: t('graduate_end_year'),
+      icon: '/icons/ntnu.svg'
+    },
+    {
+      company: t('undergraduate_school_name'),
+      role: t('undergraduate_major'),
+      start: t('undergraduate_start_year'),
+      end: t('undergraduate_end_year'),
+      icon: '/icons/ntnu.svg'
+    }
+  ]
   return (
     <div className="rounded-2xl p-6 border border-error">
       <div className="flex items-center text-sm font-semibold ">
         <AcademicCapIcon className="w-6 h-6" />
-        <span className="ml-3">Academy</span>
+        <span className="ml-3">{t('title')}</span>
       </div>
       <ol className="mt-6 space-y-4">
         {educations.map((edu, index) => (

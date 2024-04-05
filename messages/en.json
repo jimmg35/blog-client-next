@@ -13,5 +13,43 @@
     "A": "A",
     "paragraph1": "I'm Jim, a self-motivated student developer with the actual experience of over three years collaborating and working on multiple web-based projects of different domains, mostly integrating GIS techniques into the system, and providing a solution to the clients.",
     "paragraph2": "Passionate, hardworking programmer with experience in frontend frameworks such as React.js with Typescript and Tailwindcss, and Nest.js for developing backend services."
+  },
+  "Educations": {
+    "title": "Academy",
+    "graduate_school_name": "National Taiwan Normal University",
+    "graduate_major": "Master in Geographic Information Science",
+    "graduate_start_year": "2022",
+    "graduate_start_month": "Sept",
+    "graduate_end_year": "2024",
+    "graduate_end_month": "June",
+    "undergraduate_school_name": "National Taiwan Normal University",
+    "undergraduate_major": "Bachelor in Geography",
+    "undergraduate_start_year": "2018",
+    "undergraduate_start_month": "Sept",
+    "undergraduate_end_year": "2022",
+    "undergraduate_end_month": "June"
+  },
+  "Works": {
+    "title": "Work Experience",
+    "company_0": "China Credit Information Service Ltd.",
+    "role_0": "Research and Development Engineer",
+    "start_year_0": "2023",
+    "start_month_0": "March",
+    "end_year_0": "Present",
+    "end_month_0": "Present",
+    "company_1": "NADI System Corp.",
+    "role_1": "Intern Web-GIS Developer",
+    "start_year_1": "2020",
+    "start_month_1": "March",
+    "end_year_1": "2022",
+    "end_month_1": "Oct",
+    "company_2": "Interactive Digital Technologies Inc.",
+    "role_2": "Intern Web-GIS Developer",
+    "start_year_2": "2019",
+    "start_month_2": "July",
+    "end_year_2": "2021",
+    "end_month_2": "Oct",
+    "checkout": "Checkout my",
+    "linkedin": "LinkedIn"
   }
 }

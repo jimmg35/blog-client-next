@@ -13,5 +13,43 @@
     "A": "一個",
     "paragraph1": "我是家浚，一位積極進取的開發人員，擁有三年多的實際經驗，在不同領域的多個基於Web的專案上進行協作和工作，主要將GIS技術整合到系統中，並為客戶提供解決方案。",
     "paragraph2": "充滿熱情、勤奮的程式設計師，擁有前端框架經驗，例如使用 Typescript 和 Tailwindcss 的 React.js，以及用於開發後端服務的 Nest.js。"
+  },
+  "Educations": {
+    "title": "學歷",
+    "graduate_school_name": "國立臺灣師範大學",
+    "graduate_major": "地理學研究所空間資訊組",
+    "graduate_start_year": "2022",
+    "graduate_start_month": "九月",
+    "graduate_end_year": "2024",
+    "graduate_end_month": "六月",
+    "undergraduate_school_name": "國立臺灣師範大學",
+    "undergraduate_major": "地理學系",
+    "undergraduate_start_year": "2018",
+    "undergraduate_start_month": "九月",
+    "undergraduate_end_year": "2022",
+    "undergraduate_end_month": "六月"
+  },
+  "Works": {
+    "title": "工作經歷",
+    "company_0": "中華徵信不動產估價師聯合事務所",
+    "role_0": "研究員",
+    "start_year_0": "2023",
+    "start_month_0": "三月",
+    "end_year_0": "至今",
+    "end_month_0": "至今",
+    "company_1": "杰悉科技股份有限公司",
+    "role_1": "實習Web-GIS開發工程師",
+    "start_year_1": "2020",
+    "start_month_1": "三月",
+    "end_year_1": "2022",
+    "end_month_1": "十月",
+    "company_2": "互動國際數位股份有限公司",
+    "role_2": "實習Web-GIS開發工程師",
+    "start_year_2": "2019",
+    "start_month_2": "七月",
+    "end_year_2": "2021",
+    "end_month_2": "十月",
+    "checkout": "查看我的",
+    "linkedin": "LinkedIn"
   }
 }
