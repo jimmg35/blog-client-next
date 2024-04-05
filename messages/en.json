@@ -1,5 +1,12 @@
 {
   "Index": {
     "tabTitle": "Hi! I'm Jim"
+  },
+  "Routes": {
+    "About": "About",
+    "Education": "Education",
+    "Work": "Work",
+    "Articles": "Articles",
+    "Publications": "Publications"
   }
 }

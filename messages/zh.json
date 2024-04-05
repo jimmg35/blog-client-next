@@ -1,5 +1,12 @@
 {
   "Index": {
     "tabTitle": "嗨!我是家浚"
+  },
+  "Routes": {
+    "About": "關於",
+    "Education": "學歷",
+    "Work": "工作經歷",
+    "Articles": "文章",
+    "Publications": "著作"
   }
 }

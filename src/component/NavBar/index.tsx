@@ -59,7 +59,7 @@ const NavBar = ({
                                   href={route.href}
                                 >
                                   {route.icon}
-                                  {route.name}
+                                  <span>{route.name}</span>
                                 </a>
                               </li>
                             ))}
@@ -74,15 +74,15 @@ const NavBar = ({
                   </div>
 
                   <nav className="pointer-events-auto hidden md:block">
-                    <ul className="flex rounded-full bg-base-100 px-3 text-sm font-medium shadow">
+                    <ul className="flex rounded-full bg-base-100 px-3 text-sm font-medium shadow border border-error">
                       {routes.map((route, index) => (
                         <li key={index}>
                           <a
-                            className="relative flex gap-1 justify-center items-center px-3 py-2 transition hover:text-primary"
+                            className="relative w-[130px] flex gap-1 justify-center items-center px-3 py-2 transition hover:text-primary"
                             href={route.href}
                           >
                             {route.icon}
-                            {route.name}
+                            <p className=" ">{route.name}</p>
                           </a>
                         </li>
                       ))}
