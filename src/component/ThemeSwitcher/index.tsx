@@ -27,7 +27,7 @@ const ThemeSwitcher = ({ theme }: { theme: Theme }) => {
       <button
         type="button"
         aria-label="Toggle dark mode"
-        className="calcite-box rounded-full px-3 py-2 bg-base-100  border border-error"
+        className="h-[38px] calcite-box rounded-full px-3 py-2 bg-base-100  border border-error"
         onClick={toogleTheme}
       >
         {_theme === 'dark' ? (

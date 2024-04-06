@@ -1,6 +1,7 @@
 import { AcademicCapIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 const Education = () => {
   const t = useTranslations('Educations')
@@ -30,7 +31,7 @@ const Education = () => {
         {educations.map((edu, index) => (
           <li className="flex gap-4" key={index}>
             <div className="relative bg-base-100 border border-error mt-1 flex h-12 w-12 shadow-lg flex-none items-center justify-center rounded-full">
-              <img className="w-8 h-8" src={edu.icon} />
+              <Image src={edu.icon} width={32} height={32} alt="NTNU" />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>

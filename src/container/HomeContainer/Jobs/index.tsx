@@ -1,6 +1,7 @@
 import { BriefcaseIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 const Jobs = () => {
   const t = useTranslations('Works')
@@ -11,12 +12,11 @@ const Jobs = () => {
       start: t('start_year_0'),
       end: t('end_year_0'),
       icon: (
-        <img
-          className="XNo5Ab"
+        <Image
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAmVBMVEXx2trlW2DmYGPjREzjNDrjUVfrlJbldnvmc3XlYmfjTVPjQUTlgYP39/XhJjDlAADlAA/lAAjjAADiAADmAAXiFR/vtLXkAADkSE3jOj/8///lABTmhortubrhAADlAAfnq67kaGzdAAD14N/wwMD08O/16+vw0tPtoaLiHijspqbhJS7lABDplpnpl5n05ufyycvnuLjpiYhoQrtSAAACNklEQVR4AS2QB7KjMAxARW8GUWJMLDDdlJDyc//DLWT2eTztqQMYpmEYlu24nh+EQRSGVmh7nmV4LIYE0XQwTbO8wFt2y054KTDNEBlUaXqX94ywbpCIBFJqS0V0K1oH7JSw6/C/FE1fFFwOSpmjCMDJ0JE2FqouVSHENAOAPL+GSwoWc2SznmOtO2zqPE9jheguGMD9DsMoUKm6USrHcsV0iwvCfcIH1IhKiyO6etobPju88bjIxPTCOzyOQ+m8mgc1qDPSjlmUzEPkxry1IPnJSI7jCNLD27YvbzkuK7VEYKWHmou7zoUQ4CGliGpWiCkRh/spY2XPeZv9JNGxxTld8F+mVPm8O2Et7TOe0k0WlzsSsI8jn/J0eH2WPUE6MjqKj6D0l+lknJDyQp0U4tgqFL0nMDpOCwFWsS3+Pvp8H4akrcZzd+c6Ep0DofPODffdjTtLUEE/+q/Gl2vnt6fMIlDSXpypX5e7ZsU8Le/99ep+e+ZQ89idJ92UC6lge9R1EiafAA+wkMlaVEZYVY6z8eXt7WW527sM8VzloZmr9LTvezf6hvl6lWU5GdPoIoeqVV9Xya7rym5ZBZa+5QJfarYLgl7g96Xi3mPM614oFmOddBmiVyKBi/hdVfxnhE6gGap4MGqIOAbTKb1LYrXIUcu1uFXvxOvejOUVCIIww++Om+4LBV0ulm+/v1zXzUiqFIy2NRk2DI9UfRh/F3ghKAe+QU1044S4JfwQ4ij4CV0M9PkHC19GWpgMHMcAAAAASUVORK5CYII="
-          alt=""
-          data-csiid="10"
-          data-atf="4"
+          width={24}
+          height={24}
+          alt="CCIS"
         />
       )
     },
@@ -26,12 +26,11 @@ const Jobs = () => {
       start: t('start_year_1'),
       end: t('end_year_1'),
       icon: (
-        <img
-          className="XNo5Ab"
+        <Image
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEVHcExGfbhGebVGe7VGe7VGerVGerVGe7VGe7VGerVIfLhGerVGerVIerZHebRGebVtzxtvAAAAEHRSTlMAO7L/8sDlbH6ZKhRdzNpRrGhgJAAAAHhJREFUeAFjYBAycXExZQCCxGBjY0cQw1m8vFNgNYgx564AeyqQYdxp/JoTqIjbuMjYnNMIxPhqZsxkycDAZSzrY9xkwcDAaLzWqtjEHMRY57XP2J6Bgd/4ixejsSEDA4/xvygGvVsMDOymDBDAYQhlsBZAGexQGgCT5BdN2qM7CAAAAABJRU5ErkJggg=="
-          alt=""
-          data-csiid="9"
-          data-atf="1"
+          width={24}
+          height={24}
+          alt="NADI"
         />
       )
     },
@@ -41,12 +40,11 @@ const Jobs = () => {
       start: t('start_year_2'),
       end: t('end_year_2'),
       icon: (
-        <img
-          className="XNo5Ab"
+        <Image
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAclBMVEVHcEwmUZcYSZMbTJUeTZUWSJMcTZUTRpETRpEZSpQ2YaEORJAtWZ0aS5SMpsxBaKUsV5seTpY5YKBqirnP2ukYSZNQda1Sdq5EbKgvXJ4sV5sSRpESRpEnVJlLcKqFoMeOp8tOdq50kr/Q2+tIb6pPda0KCYejAAAAJnRSTlMAEFitm0OB9f+8Hf/CbRic7v3iegrpWbuDJTDWx9LWiEJAXx/mZ+9evEsAAAEJSURBVHgB1I+FgcQwEAMTo8LMDN9/i7/eZ7gCbsKSvIq958MXUulHprFAEP7vhQEixN/MUItE+B6TZnlRVvWXqRoLlb5Xtl3Xv70PI6EnwKpxYEXMyyJDjsmZmCyAZjK1UxQQxbxSgyjA9yLjUQG99zwjodi6LQDWbds53lDu8HUiRklv/ThTJYeJxCLKk5mKJoo1reA7W1yJhoS8dG3LYSzdB48ZZjB5dboy6WYjHnw2hY2iiFqytCbZciUaaXhtu65rzi00gx5pjIhYRmfW13VlpB6eaHi/e3ffa1el3jsvBZpEz4jy0yOuq/a+uDpqs+6nSP3D3pV5XnYnef9w7ee5X6+jT8IDANBLEyOi+1VlAAAAAElFTkSuQmCC"
-          alt=""
-          data-csiid="8"
-          data-atf="1"
+          width={24}
+          height={24}
+          alt="IDT"
         />
       )
     }

@@ -1,6 +1,7 @@
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { cookies } from 'next/headers'
+import LocaleSwitcher from '../LocaleSwitcher'
 import ThemeSwitcher from '../ThemeSwitcher'
 
 const NavBar = ({
@@ -89,7 +90,8 @@ const NavBar = ({
                     </ul>
                   </nav>
                 </div>
-                <div className="flex justify-end md:flex-1">
+                <div className="flex gap-3 justify-end md:flex-1">
+                  <LocaleSwitcher />
                   <ThemeSwitcher theme={theme} />
                 </div>
               </div>

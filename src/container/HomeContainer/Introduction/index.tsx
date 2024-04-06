@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import { useLocale, useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 const Introduction = () => {
   const locale = useLocale()
@@ -9,7 +10,12 @@ const Introduction = () => {
     <>
       <div className="avatar">
         <div className="rounded-full w-20 border border-zinc-400">
-          <img src="/images/oh-crap.jpg" />
+          <Image
+            src="/images/oh-crap.jpg"
+            width={80}
+            height={80}
+            alt="avatar"
+          />
         </div>
       </div>
 
