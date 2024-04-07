@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const externalLinks = [
   {
@@ -91,7 +92,7 @@ const ExternalLinks = () => {
   return (
     <div className="mt-6 flex gap-6">
       {externalLinks.map((link, index) => (
-        <a
+        <Link
           key={index}
           className="group -m-1 p-1 fill-neutral-500"
           href={link.href}
@@ -99,7 +100,7 @@ const ExternalLinks = () => {
           rel="noreferrer"
         >
           {link.icon}
-        </a>
+        </Link>
       ))}
     </div>
   )

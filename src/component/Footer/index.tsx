@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = ({
   routes
@@ -18,14 +19,15 @@ const Footer = ({
               <div className="mx-auto max-w-2xl lg:max-w-5xl">
                 <div className="flex flex-col items-center justify-between gap-6 sm:flex-row  border-t border-error pt-16">
                   <div className="flex flex-wrap justify-center gap-6 text-sm font-light">
-                    {routes.map((route) => (
-                      <a
-                        key={route.href}
+                    {routes.map((route, index) => (
+                      <Link
+                        key={index}
+                        href={route.href}
                         className="transition hover:text-primary cursor-pointer flex gap-1 justify-center items-center"
                       >
                         {route.icon}
                         {route.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   <p className="text-sm text-zinc-600 dark:text-zinc-300">

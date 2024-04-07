@@ -41,27 +41,27 @@ export default function RootLayout({
   const routes = [
     {
       name: rt('About'),
-      href: '/about',
+      href: `/${locale}/about`,
       icon: <UserIcon className="w-4 h-4" />
     },
     {
       name: rt('Education'),
-      href: '/education',
+      href: `/${locale}/education`,
       icon: <AcademicCapIcon className="w-4 h-4" />
     },
     {
       name: rt('Work'),
-      href: '/work',
+      href: `/${locale}/work`,
       icon: <BriefcaseIcon className="w-4 h-4" />
     },
     {
       name: rt('Articles'),
-      href: '/articles',
+      href: `/${locale}/articles`,
       icon: <NewspaperIcon className="w-4 h-4" />
     },
     {
       name: rt('Publications'),
-      href: '/publications',
+      href: `/${locale}/publications`,
       icon: <DocumentTextIcon className="w-4 h-4" />
     }
   ]

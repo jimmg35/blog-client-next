@@ -2,7 +2,15 @@
   "Index": {
     "tabTitle": "嗨!我是家浚"
   },
+  "Locale": {
+    "locale": "語系",
+    "en": "English",
+    "zh": "中文",
+    "ru": "Русский"
+  },
   "Routes": {
+    "Menu": "選單",
+    "Navigation": "導覽",
     "About": "關於",
     "Education": "學歷",
     "Work": "工作經歷",

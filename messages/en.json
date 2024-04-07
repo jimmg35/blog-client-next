@@ -2,7 +2,15 @@
   "Index": {
     "tabTitle": "Hi! I'm Jim"
   },
+  "Locale": {
+    "locale": "Locale",
+    "en": "English",
+    "zh": "中文",
+    "ru": "Русский"
+  },
   "Routes": {
+    "Menu": "Menu",
+    "Navigation": "Navigation",
     "About": "About",
     "Education": "Education",
     "Work": "Work",

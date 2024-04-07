@@ -2,7 +2,15 @@
   "Index": {
     "tabTitle": "Привет! Я Джим"
   },
+  "Locale": {
+    "locale": "локаль",
+    "en": "English",
+    "zh": "中文",
+    "ru": "Русский"
+  },
   "Routes": {
+    "Menu": "Меню",
+    "Navigation": "навигация",
     "About": "О нас",
     "Education": "Образование",
     "Work": "Работа",

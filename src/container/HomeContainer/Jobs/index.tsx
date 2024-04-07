@@ -2,6 +2,7 @@ import { BriefcaseIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Jobs = () => {
   const t = useTranslations('Works')
@@ -78,7 +79,7 @@ const Jobs = () => {
           </li>
         ))}
       </ol>
-      <a
+      <Link
         className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-base-100 calcite-box font-medium  group mt-6 w-full"
         href="https://www.linkedin.com/in/jimmg35/"
         target="_blank"
@@ -110,7 +111,7 @@ const Jobs = () => {
           </svg>
         </div>{' '}
         {t('linkedin')}
-      </a>
+      </Link>
     </div>
   )
 }
