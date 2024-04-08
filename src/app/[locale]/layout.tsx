@@ -2,7 +2,6 @@ import Background from '@/component/Background'
 import Footer from '@/component/Footer'
 import NavBar from '@/component/NavBar'
 import ClientCookiesProvider from '@/cookie'
-import ReduxProvider from '@/stores'
 import {
   DocumentTextIcon,
   HomeIcon,
@@ -70,22 +69,20 @@ export default function RootLayout({
     }
   ]
   return (
-    <ReduxProvider>
-      <ClientCookiesProvider value={cookies().getAll()}>
-        <html lang={locale} data-theme={theme ? theme.value : 'light'}>
-          <head>
-            <title>{t('tabTitle')}</title>
-          </head>
-          <body className={`${noto.className} bg-base-300`}>
-            <Background />
-            <div className="relative w-full min-h-[100dvh] h-fit overflow-x-hidden">
-              <NavBar routes={routes} />
-              {children}
-              <Footer routes={routes} />
-            </div>
-          </body>
-        </html>
-      </ClientCookiesProvider>
-    </ReduxProvider>
+    <ClientCookiesProvider value={cookies().getAll()}>
+      <html lang={locale} data-theme={theme ? theme.value : 'light'}>
+        <head>
+          <title>{t('tabTitle')}</title>
+        </head>
+        <body className={`${noto.className} bg-base-300`}>
+          <Background />
+          <div className="relative w-full min-h-[100dvh] h-fit overflow-x-hidden">
+            <NavBar routes={routes} />
+            {children}
+            <Footer routes={routes} />
+          </div>
+        </body>
+      </html>
+    </ClientCookiesProvider>
   )
 }
