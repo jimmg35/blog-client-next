@@ -7,6 +7,7 @@ import {
   AcademicCapIcon,
   BriefcaseIcon,
   DocumentTextIcon,
+  HomeIcon,
   NewspaperIcon,
   UserIcon
 } from '@heroicons/react/24/solid'
@@ -40,20 +41,25 @@ export default function RootLayout({
 
   const routes = [
     {
+      name: rt('Home'),
+      href: `/${locale}`,
+      icon: <HomeIcon className="w-4 h-4" />
+    },
+    {
       name: rt('About'),
       href: `/${locale}/about`,
       icon: <UserIcon className="w-4 h-4" />
     },
-    {
-      name: rt('Education'),
-      href: `/${locale}/education`,
-      icon: <AcademicCapIcon className="w-4 h-4" />
-    },
-    {
-      name: rt('Work'),
-      href: `/${locale}/work`,
-      icon: <BriefcaseIcon className="w-4 h-4" />
-    },
+    // {
+    //   name: rt('Education'),
+    //   href: `/${locale}/education`,
+    //   icon: <AcademicCapIcon className="w-4 h-4" />
+    // },
+    // {
+    //   name: rt('Work'),
+    //   href: `/${locale}/work`,
+    //   icon: <BriefcaseIcon className="w-4 h-4" />
+    // },
     {
       name: rt('Articles'),
       href: `/${locale}/articles`,

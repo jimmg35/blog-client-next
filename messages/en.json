@@ -11,6 +11,7 @@
   "Routes": {
     "Menu": "Menu",
     "Navigation": "Navigation",
+    "Home": "Home",
     "About": "About",
     "Education": "Education",
     "Work": "Work",
@@ -59,5 +60,16 @@
     "end_month_2": "Oct",
     "checkout": "Checkout my",
     "linkedin": "LinkedIn"
+  },
+  "About": {
+    "Title": "I'm Jim. I live in Tapei, where I devote myself to the field of",
+    "GIScience": "GIScience",
+    "intro": "Wsp! Thanks for stopping by. I’m Jim, a dedicated and experienced GIS professional eager to continue exploring and contributing to Geographic Information Science in my future endeavors. Some highlights about me and my activities:",
+    "highlight_title_0": "Research Assistant",
+    "highlight_content_0": "Member of National Taiwan Normal University, FORMOSAT-2 Image Application Distribute Center (IADC)",
+    "highlight_title_1": "Full-Stack Developer",
+    "highlight_content_1": "System developer at <guidelines>China Credit Information Service Ltd (CCIS)</guidelines> in Taipei.",
+    "highlight_title_2": "Fullstack Developer",
+    "highlight_content_2": "Part-time remote developer at <guidelines>JRShen Digital Culture (JSDC)</guidelines>"
   }
 }

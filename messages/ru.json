@@ -11,6 +11,7 @@
   "Routes": {
     "Menu": "Меню",
     "Navigation": "навигация",
+    "Home": "Домой",
     "About": "О нас",
     "Education": "Образование",
     "Work": "Работа",
@@ -59,5 +60,16 @@
     "end_month_2": "Окт",
     "checkout": "Посмотрите мой",
     "linkedin": "LinkedIn"
+  },
+  "About": {
+    "Title": "Я - Джим. Я живу в Тайбэе, где посвящаю себя области геоинформатики",
+    "GIScience": "Геоинформационные науки",
+    "intro": "Всп! Спасибо, что зашли. Я - Джим, преданный и опытный специалист по геоинформационным системам, с нетерпением жду возможности продолжать и расширять исследования в области географических информационных наук. Вот некоторые моменты обо мне и моей деятельности:",
+    "highlight_title_0": "Научный сотрудник",
+    "highlight_content_0": "Сотрудник Национального Тайваньского университета, Центр распределения приложений изображений FORMOSAT-2 (IADC)",
+    "highlight_title_1": "Full-Stack Разработчик",
+    "highlight_content_1": "Разработчик систем в <guidelines>China Credit Information Service Ltd (CCIS)</guidelines> в Тайбэе.",
+    "highlight_title_2": "Fullstack Разработчик",
+    "highlight_content_2": "Частично удаленный разработчик в <guidelines>JRShen Digital Culture (JSDC)</guidelines>"
   }
 }
