@@ -1,12 +1,15 @@
-import createMiddleware from 'next-intl/middleware'
+import createIntlMiddleware from 'next-intl/middleware'
+import { NextRequest } from 'next/server'
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['en', 'zh', 'ru'],
-
-  // Used when no locale matches
-  defaultLocale: 'en'
-})
+export default function middleware(req: NextRequest) {
+  const handleI18nRouting = createIntlMiddleware({
+    locales: ['en', 'zh', 'ru'],
+    defaultLocale: 'en'
+  })
+  const response = handleI18nRouting(req)
+  response.headers.set('x-url', req.url)
+  return response
+}
 
 export const config = {
   // Match only internationalized pathnames

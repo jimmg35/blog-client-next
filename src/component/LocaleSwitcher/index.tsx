@@ -1,9 +1,11 @@
+'use client'
+
 import { LanguageIcon } from '@heroicons/react/24/solid'
 import React from 'react'
-import { useTranslations } from 'next-intl'
-import { headers } from 'next/headers'
+import { NextIntlClientProvider, useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const getClientPathname = (url: string) => {
   const match = url.match(/\/(zh|ru|en)\/(.*)/)
@@ -12,28 +14,28 @@ const getClientPathname = (url: string) => {
 }
 
 const LocaleSwitcher = () => {
-  const headersList = headers()
-  const url = headersList.get('referer') || ''
-  // const url = 'http://localhost:3000/zh/about/me'
+  // const headersList = headers()
+  // const url = headersList.get('x-url') || ''
+  // console.log(url)
 
-  const pathname = getClientPathname(url)
+  const pathname = getClientPathname(usePathname())
 
-  const t = useTranslations('Locale')
+  // const t = useTranslations('Locale')
   const locales = [
     {
       href: `/en${pathname}`,
-      name: t('en'),
+      name: 'English',
       icon: <Image src="/icons/us.svg" width={24} height={24} alt="English" />
     },
     {
       href: `/zh${pathname}`,
-      name: t('zh'),
+      name: '繁體中文',
       icon: <Image src="/icons/tw.svg" width={24} height={24} alt="English" />
     },
 
     {
       href: `/ru${pathname}`,
-      name: t('ru'),
+      name: 'Русский',
       icon: <Image src="/icons/ru.svg" width={24} height={24} alt="English" />
     }
   ]
@@ -51,7 +53,7 @@ const LocaleSwitcher = () => {
       <div className="modal" role="dialog">
         <div className="modal-box absolute top-[25px]">
           <div className="flex justify-between items-center">
-            <h3 className="text-sm font-light">{t('locale')}</h3>
+            <h3 className="text-sm font-light">Locale</h3>
             <label
               className="btn btn-sm btn-circle btn-ghost "
               htmlFor="locale_modal"

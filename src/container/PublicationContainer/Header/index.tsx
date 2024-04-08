@@ -1,17 +1,14 @@
 import React from 'react'
+import { useTranslations } from 'next-intl'
 
 const Header = () => {
+  const t = useTranslations('Publications')
   return (
     <header className="max-w-2xl">
       <h1 className=" text-4xl font-bold tracking-tight sm:text-5xl">
-        I actively pursued opportunities to share my findings with the academic
-        community.
+        {t('Title')}
       </h1>
-      <p className="text-justify mt-6 text-lg ">
-        These are several of my publications, including conference, journal
-        paper, and conference presentations. Even though this isn't much,
-        everyone starts somewhere, right?
-      </p>
+      <p className="text-justify mt-6 text-lg ">{t('Description')}</p>
     </header>
   )
 }

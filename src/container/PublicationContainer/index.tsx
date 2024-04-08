@@ -1,3 +1,4 @@
+import React from 'react'
 import Gallery from './Gallery'
 import Article from './Gallery/Article'
 import Section from './Gallery/Section'
