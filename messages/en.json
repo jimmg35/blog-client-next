@@ -1,0 +1,75 @@
+{
+  "Index": {
+    "tabTitle": "Hi! I'm Jim"
+  },
+  "Locale": {
+    "locale": "Locale",
+    "en": "English",
+    "zh": "中文",
+    "ru": "Русский"
+  },
+  "Routes": {
+    "Menu": "Menu",
+    "Navigation": "Navigation",
+    "Home": "Home",
+    "About": "About",
+    "Education": "Education",
+    "Work": "Work",
+    "Articles": "Articles",
+    "Publications": "Publications"
+  },
+  "Introduction": {
+    "A": "A",
+    "paragraph1": "Hello there, I'm Jim from Taiwan, a person deeply passionate about Geographic Information Science (GIS) and remote sensing technology, actively exploring and contributing to this field. Holding both a Master's and Bachelor's degree in Geography from National Taiwan Normal University.",
+    "paragraph2": "As a research assistant, I engaged in various projects, from air quality prediction to the development of geospatial applications. At China Credit Information Service, I served as a researcher and full-stack developer, working on automating appraisal processes by merging geospatial technology with internal algorithms."
+  },
+  "Educations": {
+    "title": "Academy",
+    "graduate_school_name": "National Taiwan Normal University",
+    "graduate_major": "Master in Geographic Information Science",
+    "graduate_start_year": "2022",
+    "graduate_start_month": "Sept",
+    "graduate_end_year": "2024",
+    "graduate_end_month": "June",
+    "undergraduate_school_name": "National Taiwan Normal University",
+    "undergraduate_major": "Bachelor in Geography",
+    "undergraduate_start_year": "2018",
+    "undergraduate_start_month": "Sept",
+    "undergraduate_end_year": "2022",
+    "undergraduate_end_month": "June"
+  },
+  "Works": {
+    "title": "Work Experience",
+    "company_0": "China Credit Information Service Ltd.",
+    "role_0": "Research and Development Engineer",
+    "start_year_0": "2023",
+    "start_month_0": "March",
+    "end_year_0": "Present",
+    "end_month_0": "Present",
+    "company_1": "NADI System Corp.",
+    "role_1": "Intern Web-GIS Developer",
+    "start_year_1": "2020",
+    "start_month_1": "March",
+    "end_year_1": "2022",
+    "end_month_1": "Oct",
+    "company_2": "Interactive Digital Technologies Inc.",
+    "role_2": "Intern Web-GIS Developer",
+    "start_year_2": "2019",
+    "start_month_2": "July",
+    "end_year_2": "2021",
+    "end_month_2": "Oct",
+    "checkout": "Checkout my",
+    "linkedin": "LinkedIn"
+  },
+  "About": {
+    "Title": "I'm Jim. I live in Tapei, where I devote myself to the field of",
+    "GIScience": "GIScience",
+    "intro": "Wsp! Thanks for stopping by. I’m Jim, a dedicated and experienced GIS professional eager to continue exploring and contributing to Geographic Information Science in my future endeavors. Some highlights about me and my activities:",
+    "highlight_title_0": "Research Assistant",
+    "highlight_content_0": "Member of National Taiwan Normal University, FORMOSAT-2 Image Application Distribute Center (IADC)",
+    "highlight_title_1": "Full-Stack Developer",
+    "highlight_content_1": "System developer at <guidelines>China Credit Information Service Ltd (CCIS)</guidelines> in Taipei.",
+    "highlight_title_2": "Fullstack Developer",
+    "highlight_content_2": "Part-time remote developer at <guidelines>JRShen Digital Culture (JSDC)</guidelines>"
+  }
+}

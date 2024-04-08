@@ -1,6 +1,9 @@
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import React from 'react'
+import { useTranslations } from 'next-intl'
 import { cookies } from 'next/headers'
+import Link from 'next/link'
+import LocaleSwitcher from '../LocaleSwitcher'
 import ThemeSwitcher from '../ThemeSwitcher'
 
 const NavBar = ({
@@ -12,6 +15,7 @@ const NavBar = ({
     icon: React.JSX.Element
   }[]
 }) => {
+  const t = useTranslations('Routes')
   const theme = cookies().get('theme')?.value === 'dark' ? 'dark' : 'light'
 
   return (
@@ -28,7 +32,7 @@ const NavBar = ({
                       htmlFor="menu_modal"
                       className="hover:text-primary cursor-pointer group flex items-center gap-2 rounded-full bg-base-100 px-4 py-2 text-sm font-medium shadow-lg backdrop-blur"
                     >
-                      Menu
+                      {t('Menu')}
                       <ChevronDownIcon className="w-3 h-3" />
                     </label>
 
@@ -40,7 +44,9 @@ const NavBar = ({
                     <div className="modal" role="dialog">
                       <div className="modal-box absolute top-[25px]">
                         <div className="flex justify-between items-center">
-                          <h3 className="text-sm font-light">Navigation</h3>
+                          <h3 className="text-sm font-light">
+                            {t('Navigation')}
+                          </h3>
                           <label
                             className="btn btn-sm btn-circle btn-ghost "
                             htmlFor="menu_modal"
@@ -53,14 +59,14 @@ const NavBar = ({
                           <ul className="-my-2 divide-y divide-base-200 text-base ">
                             {routes.map((route, index) => (
                               <li key={index}>
-                                <a
+                                <Link
                                   className="py-2 flex gap-1 juctify-center items-center"
                                   data-headlessui-state="open"
                                   href={route.href}
                                 >
                                   {route.icon}
-                                  {route.name}
-                                </a>
+                                  <span>{route.name}</span>
+                                </Link>
                               </li>
                             ))}
                           </ul>
@@ -74,22 +80,23 @@ const NavBar = ({
                   </div>
 
                   <nav className="pointer-events-auto hidden md:block">
-                    <ul className="flex rounded-full bg-base-100 px-3 text-sm font-medium shadow">
+                    <ul className="flex rounded-full bg-base-100 px-3 text-sm font-medium shadow border border-error">
                       {routes.map((route, index) => (
                         <li key={index}>
-                          <a
-                            className="relative flex gap-1 justify-center items-center px-3 py-2 transition hover:text-primary"
+                          <Link
+                            className="relative w-[130px] flex gap-1 justify-center items-center px-3 py-2 transition hover:text-primary"
                             href={route.href}
                           >
                             {route.icon}
-                            {route.name}
-                          </a>
+                            <p className=" ">{route.name}</p>
+                          </Link>
                         </li>
                       ))}
                     </ul>
                   </nav>
                 </div>
-                <div className="flex justify-end md:flex-1">
+                <div className="flex gap-3 justify-end md:flex-1">
+                  <LocaleSwitcher />
                   <ThemeSwitcher theme={theme} />
                 </div>
               </div>

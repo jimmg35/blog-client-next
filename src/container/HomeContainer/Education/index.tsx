@@ -1,35 +1,37 @@
 import { AcademicCapIcon } from '@heroicons/react/24/solid'
 import React from 'react'
-
-const educations = [
-  {
-    company: 'National Taiwan Normal University',
-    role: 'Master in Geographic Information Science',
-    start: '2022',
-    end: 'Present',
-    icon: '/icons/ntnu.svg'
-  },
-  {
-    company: 'National Taiwan Normal University',
-    role: 'Bachelor in Geography',
-    start: '2022',
-    end: 'Present',
-    icon: '/icons/ntnu.svg'
-  }
-]
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 const Education = () => {
+  const t = useTranslations('Educations')
+  const educations = [
+    {
+      company: t('graduate_school_name'),
+      role: t('graduate_major'),
+      start: t('graduate_start_year'),
+      end: t('graduate_end_year'),
+      icon: '/icons/ntnu.svg'
+    },
+    {
+      company: t('undergraduate_school_name'),
+      role: t('undergraduate_major'),
+      start: t('undergraduate_start_year'),
+      end: t('undergraduate_end_year'),
+      icon: '/icons/ntnu.svg'
+    }
+  ]
   return (
     <div className="rounded-2xl p-6 border border-error">
       <div className="flex items-center text-sm font-semibold ">
         <AcademicCapIcon className="w-6 h-6" />
-        <span className="ml-3">Academy</span>
+        <span className="ml-3">{t('title')}</span>
       </div>
       <ol className="mt-6 space-y-4">
         {educations.map((edu, index) => (
           <li className="flex gap-4" key={index}>
             <div className="relative bg-base-100 border border-error mt-1 flex h-12 w-12 shadow-lg flex-none items-center justify-center rounded-full">
-              <img className="w-8 h-8" src={edu.icon} />
+              <Image src={edu.icon} width={32} height={32} alt="NTNU" />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
