@@ -4,8 +4,6 @@ import NavBar from '@/component/NavBar'
 import ClientCookiesProvider from '@/cookie'
 import ReduxProvider from '@/stores'
 import {
-  AcademicCapIcon,
-  BriefcaseIcon,
   DocumentTextIcon,
   HomeIcon,
   NewspaperIcon,
