@@ -1,0 +1,79 @@
+{
+  "Index": {
+    "tabTitle": "嗨!我是家浚"
+  },
+  "Locale": {
+    "locale": "語系",
+    "en": "English",
+    "zh": "中文",
+    "ru": "Русский"
+  },
+  "Routes": {
+    "Menu": "選單",
+    "Navigation": "導覽",
+    "Home": "首頁",
+    "About": "關於",
+    "Education": "學歷",
+    "Work": "工作經歷",
+    "Articles": "文章",
+    "Publications": "著作"
+  },
+  "Introduction": {
+    "A": "一個",
+    "paragraph1": "大家好，我是來自臺灣的家浚，對地理資訊科學（GIS）和遙測技術（RS）充滿熱情，積極地探索和貢獻於這個領域。我擁有國立臺灣師範大學地理學系的碩士和學士學位。",
+    "paragraph2": "在學時期作為一名研究助理，我參與了各種項目，從空氣品質預測到地理空間應用的開發。在中華徵信所，我擔任研究員和全端開發人員，致力於通過將地理空間技術與內部算法相結合，開發自動化估價流程。"
+  },
+  "Educations": {
+    "title": "學歷",
+    "graduate_school_name": "國立臺灣師範大學",
+    "graduate_major": "地理學研究所空間資訊組",
+    "graduate_start_year": "2022",
+    "graduate_start_month": "九月",
+    "graduate_end_year": "2024",
+    "graduate_end_month": "六月",
+    "undergraduate_school_name": "國立臺灣師範大學",
+    "undergraduate_major": "地理學系",
+    "undergraduate_start_year": "2018",
+    "undergraduate_start_month": "九月",
+    "undergraduate_end_year": "2022",
+    "undergraduate_end_month": "六月"
+  },
+  "Works": {
+    "title": "工作經歷",
+    "company_0": "中華徵信不動產估價師聯合事務所",
+    "role_0": "研究員",
+    "start_year_0": "2023",
+    "start_month_0": "三月",
+    "end_year_0": "至今",
+    "end_month_0": "至今",
+    "company_1": "杰悉科技股份有限公司",
+    "role_1": "實習Web-GIS開發工程師",
+    "start_year_1": "2020",
+    "start_month_1": "三月",
+    "end_year_1": "2022",
+    "end_month_1": "十月",
+    "company_2": "互動國際數位股份有限公司",
+    "role_2": "實習Web-GIS開發工程師",
+    "start_year_2": "2019",
+    "start_month_2": "七月",
+    "end_year_2": "2021",
+    "end_month_2": "十月",
+    "checkout": "查看我的",
+    "linkedin": "LinkedIn"
+  },
+  "About": {
+    "Title": "我是家浚。我住在臺北，致力於",
+    "GIScience": "空間資訊科學",
+    "intro": "Wsp！感謝您的光臨。我是家浚，一位專業且有豐富經驗的空間資訊科學專業人士，熱切期待在未來的努力中繼續探索和貢獻。以下是關於我的一些亮點：",
+    "highlight_title_0": "研究助理",
+    "highlight_content_0": "國立臺灣師範大學，福爾摩沙衛星二號圖像應用分發中心（IADC）成員",
+    "highlight_title_1": "全端開發人員",
+    "highlight_content_1": "在臺北的<guidelines>中華徵信不動產估價師聯合事務所(CCIS)</guidelines>擔任系統開發人員",
+    "highlight_title_2": "全端開發人員",
+    "highlight_content_2": "遠端兼職技術人員於<guidelines>智紳數位文化事業(JSDC)</guidelines>"
+  },
+  "Publications": {
+    "Title": "我熱衷於與學術界分享我的研究發現。",
+    "Description": "這些是我的幾篇出版物，包括會議論文、期刊論文和會議演講。雖然這些不算多，但萬事起頭難，對吧？"
+  }
+}

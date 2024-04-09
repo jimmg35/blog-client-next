@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .calcite-box {
+    @apply shadow rounded-md;
+  }
+  /* 2A2A2B */
+}
+
+body {
+  @apply w-screen h-fit relative bg-base-200 overflow-y-auto overflow-x-hidden;
+}
+
+main {
+  @apply w-full bg-transparent overflow-hidden h-fit;
+}
+
+.JobTitle {
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.progress {
+  animation: progress 2.5s linear forwards;
+}
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
