@@ -1,13 +1,18 @@
+import ArticleChip from '@/component/ArticleChip'
 import convertUTCtoLocalDate from '@/lib/convertUTCtoLocalDate'
+import { ArticleCategory } from '@/types/articles'
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 
 const Article = ({
   title,
   description,
+  categories,
   date
 }: {
   title: string
   description: string
+  categories: ArticleCategory[]
   date: string
 }) => {
   const dateAtUserTimeZone = convertUTCtoLocalDate(date)
@@ -36,26 +41,17 @@ const Article = ({
         <p className="relative z-10 mt-2 text-sm">{description}</p>
         <div
           aria-hidden="true"
-          className="relative z-10 mt-4 flex items-center text-sm font-medium text-primary"
+          className="relative z-10 mt-4 flex items-center gap-1 text-sm font-medium text-primary"
         >
+          {/* {categories.map((category, index) => (
+            <ArticleChip key={index} category={category} />
+          ))} */}
           Read article
-          <svg
-            viewBox="0 0 16 16"
-            fill="none"
-            aria-hidden="true"
-            className="ml-1 h-4 w-4 stroke-current"
-          >
-            <path
-              d="M6.75 5.75 9.25 8l-2.5 2.25"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
+          <ArrowUpRightIcon className="h-3 w-3" />
         </div>
       </div>
       <time
-        className="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 dark:text-zinc-500"
+        className="mt-1 hidden md:block relative z-10 order-first mb-3  items-center text-sm text-zinc-500 dark:text-zinc-500"
         dateTime={dateAtUserTimeZone}
       >
         {dateAtUserTimeZone}

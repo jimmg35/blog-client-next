@@ -27,6 +27,7 @@ export const getFileContent = async (
           resolve({ status: 200, content: content })
         })
     } catch (e) {
+      console.log(e)
       reject({ status: 404, content: '404 not found' })
     }
   })
@@ -76,7 +77,6 @@ export const getArticleList = async () => {
   })
   const subFolders = res.data.files
   if (!subFolders) return []
-
   const subFolderContents = await getSubFolderFiles(subFolders)
   return subFolderContents
 }

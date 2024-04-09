@@ -78,6 +78,9 @@
   },
   "Articles": {
     "Title": "我喜歡寫一些關於空間資訊的文章。",
-    "Description": "這些是我寫的一些文章，主要是關於空間資訊科學和期刊論文的閱讀心得。"
+    "Description": "這些是我寫的一些文章，主要是關於空間資訊科學和期刊論文的閱讀心得。",
+    "CategoryGIS": "地理資訊系統",
+    "CategoryGeneral": "一般文章",
+    "CategoryReview": "期刊閱讀"
   }
 }

@@ -20,6 +20,7 @@ const ArticlesContainer = async () => {
                     key={index}
                     title={article.meta.title}
                     description={article.meta.description}
+                    categories={article.meta.category}
                     date={article.markdown.modifiedTime}
                   />
                 ))}
