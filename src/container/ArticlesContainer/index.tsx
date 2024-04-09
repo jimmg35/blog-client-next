@@ -13,11 +13,12 @@ const ArticlesContainer = async () => {
           <div className="relative px-4 sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <Header />
-
               <Gallery>
                 {articles.map((article, index) => (
                   <Article
                     key={index}
+                    articleId={article.markdown.id}
+                    metaId={article.metaId}
                     title={article.meta.title}
                     description={article.meta.description}
                     categories={article.meta.category}

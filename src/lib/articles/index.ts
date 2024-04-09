@@ -9,6 +9,7 @@ export const getFileContent = async (
       version: 'v3',
       auth: process.env.NEXT_PUBLIC_GOOGLE_DRIVE_KEY
     })
+
     try {
       const response = await drive.files.get(
         {
@@ -33,11 +34,10 @@ export const getFileContent = async (
   })
 }
 
-export const getSubFolderFiles = async (subFolders: drive_v3.Schema$File[]) => {
-  const drive = google.drive({
-    version: 'v3',
-    auth: process.env.NEXT_PUBLIC_GOOGLE_DRIVE_KEY
-  })
+export const getSubFolderFiles = async (
+  subFolders: drive_v3.Schema$File[],
+  drive: drive_v3.Drive
+) => {
   const subFoldersContent = []
   for (let i = 0; i < subFolders.length; i++) {
     const subFoler = subFolders[i]
@@ -50,14 +50,15 @@ export const getSubFolderFiles = async (subFolders: drive_v3.Schema$File[]) => {
 
     const markdown = filesInSubFolder.find((f) => f.name === 'content.mdx')
     const meta = filesInSubFolder.find((f) => f.name === 'meta.json')
-    if (!meta) continue
+    if (!meta || meta.id === null || meta.id === undefined) continue
     if (!markdown) continue
     const { content: markdownMeta } = await getFileContent(
       meta.id ? meta.id : ''
     )
     const content = {
       markdown: markdown as IGoogleDriveFile,
-      meta: JSON.parse(markdownMeta) as IMarkDownMeta
+      meta: JSON.parse(markdownMeta) as IMarkDownMeta,
+      metaId: meta.id
     }
     subFoldersContent.push(content)
   }
@@ -77,6 +78,6 @@ export const getArticleList = async () => {
   })
   const subFolders = res.data.files
   if (!subFolders) return []
-  const subFolderContents = await getSubFolderFiles(subFolders)
+  const subFolderContents = await getSubFolderFiles(subFolders, drive)
   return subFolderContents
 }

@@ -3,28 +3,35 @@ import convertUTCtoLocalDate from '@/lib/convertUTCtoLocalDate'
 import { ArticleCategory } from '@/types/articles'
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import React from 'react'
+import { useLocale } from 'next-intl'
+import Link from 'next/link'
 
 const Article = ({
+  articleId,
+  metaId,
   title,
   description,
   categories,
   date
 }: {
+  articleId: string
+  metaId: string
   title: string
   description: string
   categories: ArticleCategory[]
   date: string
 }) => {
+  const locale = useLocale()
   const dateAtUserTimeZone = convertUTCtoLocalDate(date)
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline pl-4">
       <div className="md:col-span-3 group relative flex flex-col items-start">
         <h2 className="text-base font-semibold tracking-tight">
           <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-base-300 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
-          <a href="/articles/forecast-cloudy">
+          <Link href={`/${locale}/articles/${articleId}/${metaId}`}>
             <span className="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
             <span className="relative z-10">{title}</span>
-          </a>
+          </Link>
         </h2>
         <time
           className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm pl-3.5"
@@ -41,11 +48,11 @@ const Article = ({
         <p className="relative z-10 mt-2 text-sm">{description}</p>
         <div
           aria-hidden="true"
-          className="relative z-10 mt-4 flex items-center gap-1 text-sm font-medium text-primary"
+          className="relative z-10 mt-4 flex items-center gap-2 text-sm font-medium text-primary"
         >
-          {/* {categories.map((category, index) => (
+          {categories.map((category, index) => (
             <ArticleChip key={index} category={category} />
-          ))} */}
+          ))}
           Read article
           <ArrowUpRightIcon className="h-3 w-3" />
         </div>

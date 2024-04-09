@@ -6,8 +6,8 @@ const ArticleChip = ({ category }: { category: ArticleCategory }) => {
   const t = useTranslations('Articles')
 
   const CategoryName: { [key in ArticleCategory]: string } = {
-    general: t('CategoryGIS'),
-    gis: t('CategoryGeneral'),
+    general: t('CategoryGeneral'),
+    gis: t('CategoryGIS'),
     review: t('CategoryReview')
   }
 
