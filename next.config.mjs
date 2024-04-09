@@ -3,7 +3,6 @@ import rehypePrismPlus from 'rehype-prism-plus'
 import remarkGfm from 'remark-gfm'
 import nextMDX from '@next/mdx'
 import createNextIntlPlugin from 'next-intl/plugin'
-import remarkCodeTitles from './src/lib/remark-code-title.mjs'
 
 const withNextIntl = createNextIntlPlugin()
 
@@ -15,7 +14,7 @@ const nextConfig = {
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm, remarkCodeTitles],
+    remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypePrismPlus, rehypePresetMinify],
     providerImportSource: '@mdx-js/react'
   }

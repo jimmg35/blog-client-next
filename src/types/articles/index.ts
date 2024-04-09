@@ -13,3 +13,11 @@ export interface IGoogleDriveFile {
   name: string
   modifiedTime: string
 }
+
+export type ArticleCategory = 'general' | 'gis' | 'review'
+
+export interface IMarkDownMeta {
+  title: string
+  description: string
+  category: ArticleCategory[]
+}
