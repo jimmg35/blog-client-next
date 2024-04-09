@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 import rehypePresetMinify from 'rehype-preset-minify'
 import rehypePrismPlus from 'rehype-prism-plus'
 import remarkGfm from 'remark-gfm'
 import nextMDX from '@next/mdx'
 import createNextIntlPlugin from 'next-intl/plugin'
 import remarkCodeTitles from './src/lib/remark-code-title.mjs'
-=======
-import createNextIntlPlugin from 'next-intl/plugin'
->>>>>>> 5a45d81158aed34d2aa2a21516425304c9be05b0
 
 const withNextIntl = createNextIntlPlugin()
 

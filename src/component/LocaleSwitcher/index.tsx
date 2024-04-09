@@ -2,7 +2,6 @@
 
 import { LanguageIcon } from '@heroicons/react/24/solid'
 import React from 'react'
-import { NextIntlClientProvider, useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
