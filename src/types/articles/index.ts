@@ -16,8 +16,9 @@ export interface IGoogleDriveFile {
 
 export type ArticleCategory = 'general' | 'gis' | 'review'
 
-export interface IMarkDownMeta {
+export interface IArticleMeta {
   title: string
   description: string
   category: ArticleCategory[]
+  modifiedTime: string
 }

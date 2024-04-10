@@ -1,9 +1,13 @@
-import { getFileContent } from '@/lib/articles'
+'use client'
+
+// import { getFileContent } from '@/lib/articles'
+import { loadArticleContent, loadArticleMeta } from '@/lib/getAllArticles'
 import { ArrowLeftIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useLocale } from 'next-intl'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
+import MDD from '../../../../articles/this-is-test-article/index.mdx'
 
 const PreviousPageButton = () => {
   const locale = useLocale()
@@ -18,12 +22,12 @@ const PreviousPageButton = () => {
 }
 
 const ArticlePage = async ({
-  params: { articleId, metaId }
+  params: { articleId }
 }: {
-  params: { locale: string; articleId: string; metaId: string }
+  params: { locale: string; articleId: string }
 }) => {
-  const { content } = await getFileContent(metaId)
-  const markdown = await getFileContent(articleId)
+  const content = await loadArticleContent(articleId)
+  const { meta } = await loadArticleMeta(articleId)
   return (
     <main>
       <div className="sm:px-8 mt-16 lg:mt-32">
@@ -36,11 +40,21 @@ const ArticlePage = async ({
                   <article>
                     <header className="flex flex-col">
                       <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        {JSON.parse(content).title}
+                        {meta && JSON.parse(meta).title}
                       </h1>
                     </header>
                     <div className="pt-6 prose prose-lg text-xl max-w-none dark:prose-invert mt-8">
-                      <MDXRemote source={markdown.content} />
+                      {/* {content && (
+                        <MDXRemote
+                          source={
+                            'http://202.39.9.102:1180/articles/welcome/content.mdx'
+                          }
+                        />
+                      )} */}
+                      {/* {content && (
+                        <div dangerouslySetInnerHTML={{ __html: content }} />
+                      )} */}
+                      <MDD />
                     </div>
                   </article>
                 </div>

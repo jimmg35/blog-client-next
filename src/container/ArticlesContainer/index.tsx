@@ -1,11 +1,15 @@
-import { getArticleList } from '@/lib/articles'
+// import { getArticleList } from '@/lib/articles'
+import { getAllArticlesMeta } from '@/lib/getAllArticles'
 import React from 'react'
 import Gallery from './Gallery'
 import Article from './Gallery/Article'
 import Header from './Header'
 
 const ArticlesContainer = async () => {
-  const articles = await getArticleList()
+  // const articles = await getArticleList()
+
+  const metas = await getAllArticlesMeta()
+
   return (
     <main className="">
       <div className="sm:px-8 mt-16 sm:mt-32">
@@ -14,16 +18,8 @@ const ArticlesContainer = async () => {
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <Header />
               <Gallery>
-                {articles.map((article, index) => (
-                  <Article
-                    key={index}
-                    articleId={article.markdown.id}
-                    metaId={article.metaId}
-                    title={article.meta.title}
-                    description={article.meta.description}
-                    categories={article.meta.category}
-                    date={article.markdown.modifiedTime}
-                  />
+                {metas.map(({ meta, articleId }, index) => (
+                  <Article key={index} articleId={articleId} meta={meta} />
                 ))}
               </Gallery>
             </div>
