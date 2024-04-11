@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 
 const photos = [
-  { src: '/images/photo_wall/sea-2.jpg', rotate: true },
+  { src: '/images/photo_wall/sea-3.jpg', rotate: true },
   { src: '/images/photo_wall/sea-1.jpg', rotate: false },
   { src: '/images/photo_wall/sea-0.jpg', rotate: true },
-  { src: '/images/photo_wall/sea-3.jpg', rotate: true },
+  { src: '/images/photo_wall/sea-2.jpg', rotate: true },
   { src: '/images/photo_wall/sea-4.jpg', rotate: false }
 ]
 
@@ -18,13 +18,16 @@ const PictureWall = () => {
             key={index}
             className={`relative calcite-box aspect-[9/10] w-44 flex-none overflow-hidden sm:w-72 sm:rounded-2xl ${photo.rotate ? 'rotate-3' : '-rotate-3'}`}
           >
-            <Image
-              src={photo.src}
-              alt="sea"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-            />
+            <p className="absolute z-10 top-0 left-1/2 -translate-x-1/2"></p>
+            <div className="z-0">
+              <Image
+                src={photo.src}
+                alt="sea"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+              />
+            </div>
           </div>
         ))}
       </div>
