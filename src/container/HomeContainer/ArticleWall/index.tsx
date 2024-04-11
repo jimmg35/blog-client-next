@@ -32,7 +32,13 @@ export async function getAllArticlesMeta() {
 }
 
 const ArticleWall = async () => {
-  const metas = (await getAllArticlesMeta()).slice(0, 4)
+  const metas = (await getAllArticlesMeta())
+    .sort(
+      (a, b) =>
+        new Date(b.meta.modifiedTime).getTime() -
+        new Date(a.meta.modifiedTime).getTime()
+    )
+    .slice(0, 4)
 
   return (
     <div className="flex flex-col gap-16">
