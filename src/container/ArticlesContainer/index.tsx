@@ -1,5 +1,3 @@
-// import { getArticleList } from '@/lib/articles'
-// import { getAllArticlesMeta } from '@/lib/getAllArticles'
 import { IArticleMeta } from '@/types/articles'
 import React from 'react'
 import { readFileSync, readdirSync } from 'fs'

@@ -11,7 +11,7 @@ const Introduction = () => {
       <div className="avatar">
         <div className="rounded-full w-20 border border-zinc-400">
           <Image
-            src="/images/oh-crap.jpg"
+            src="/images/chiwawa.jpeg"
             width={80}
             height={80}
             alt="avatar"

@@ -125,7 +125,7 @@ const Introduction = () => {
       <div className="lg:pl-20">
         <div className="max-w-xs px-2.5 lg:max-w-none relative">
           <Image
-            src="/images/oh-crap.jpg"
+            src="/images/chiwawa.jpeg"
             width={440}
             height={440}
             alt="avatar"
