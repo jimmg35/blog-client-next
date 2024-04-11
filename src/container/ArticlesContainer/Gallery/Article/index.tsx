@@ -1,6 +1,5 @@
 import ArticleChip from '@/component/ArticleChip'
-import convertUTCtoLocalDate from '@/lib/convertUTCtoLocalDate'
-import { ArticleCategory, IArticleMeta } from '@/types/articles'
+import { IArticleMeta } from '@/types/articles'
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useLocale } from 'next-intl'

@@ -28,7 +28,7 @@ export async function loadArticleMeta(articleFilename: string) {
 export async function getAllArticlesMeta() {
   const articles = await readdirSync(path.join(process.cwd(), 'src/articles'))
   const metas = []
-  for (let article of articles) {
+  for (const article of articles) {
     const { meta, articleId } = await loadArticleMeta(article)
     if (meta) metas.push({ meta: JSON.parse(meta) as IArticleMeta, articleId })
   }

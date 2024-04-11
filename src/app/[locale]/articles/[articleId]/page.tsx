@@ -7,35 +7,6 @@ import { remark } from 'remark'
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
 
-export async function markdownToHTML(markdownString: string) {
-  const result = await remark().use(remarkHTML).process(markdownString)
-  return result.toString()
-}
-
-export async function readMdxFile(mdxPath: string) {
-  try {
-    const fullPath = path.resolve(__dirname, mdxPath)
-    const content = await readFileSync(fullPath, 'utf8')
-    return content
-  } catch (err) {
-    console.error(`Error reading MDX file: ${err}`)
-  }
-}
-
-export async function loadArticleMeta(articleFilename: string) {
-  const meta = await readMdxFile(
-    path.join(process.cwd(), `src/articles/${articleFilename}/meta.json`)
-  )
-  return { meta, articleId: articleFilename }
-}
-
-export async function loadArticleContent(articleId: string) {
-  const content = await readMdxFile(
-    path.join(process.cwd(), `src/articles/${articleId}/index.mdx`)
-  )
-  return content
-}
-
 const PreviousPageButton = () => {
   const locale = useLocale()
   return (
@@ -53,6 +24,35 @@ const ArticlePage = async ({
 }: {
   params: { locale: string; articleId: string }
 }) => {
+  const markdownToHTML = async (markdownString: string) => {
+    const result = await remark().use(remarkHTML).process(markdownString)
+    return result.toString()
+  }
+
+  const readMdxFile = async (mdxPath: string) => {
+    try {
+      const fullPath = path.resolve(__dirname, mdxPath)
+      const content = await readFileSync(fullPath, 'utf8')
+      return content
+    } catch (err) {
+      console.error(`Error reading MDX file: ${err}`)
+    }
+  }
+
+  const loadArticleMeta = async (articleFilename: string) => {
+    const meta = await readMdxFile(
+      path.join(process.cwd(), `src/articles/${articleFilename}/meta.json`)
+    )
+    return { meta, articleId: articleFilename }
+  }
+
+  const loadArticleContent = async (articleId: string) => {
+    const content = await readMdxFile(
+      path.join(process.cwd(), `src/articles/${articleId}/index.mdx`)
+    )
+    return content
+  }
+
   const { meta } = await loadArticleMeta(articleId)
   const content = await loadArticleContent(articleId)
   const mdHtmlContent = content ? await markdownToHTML(content) : undefined
