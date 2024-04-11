@@ -1,10 +1,16 @@
+import remarkHTML from 'remark-html'
 import { ArrowLeftIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { readFileSync } from 'fs'
 import * as path from 'path'
+import { remark } from 'remark'
 import { useLocale } from 'next-intl'
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
+
+export async function markdownToHTML(markdownString: string) {
+  const result = await remark().use(remarkHTML).process(markdownString)
+  return result.toString()
+}
 
 export async function readMdxFile(mdxPath: string) {
   try {
@@ -47,8 +53,9 @@ const ArticlePage = async ({
 }: {
   params: { locale: string; articleId: string }
 }) => {
-  const content = await loadArticleContent(articleId)
   const { meta } = await loadArticleMeta(articleId)
+  const content = await loadArticleContent(articleId)
+  const mdHtmlContent = content ? await markdownToHTML(content) : undefined
   return (
     <main>
       <div className="sm:px-8 mt-16 lg:mt-32">
@@ -64,9 +71,13 @@ const ArticlePage = async ({
                         {meta && JSON.parse(meta).title}
                       </h1>
                     </header>
-                    <div className="pt-6 prose prose-lg text-xl max-w-none dark:prose-invert mt-8">
-                      {/* {content && } */}
-                      {/* <MMDX /> */}
+                    <div>
+                      {mdHtmlContent && (
+                        <div
+                          className="mt-8 pt-6 prose prose-lg text-xl max-w-none dark:prose-invert  dark:prose-hr:border-zinc-800"
+                          dangerouslySetInnerHTML={{ __html: mdHtmlContent }}
+                        />
+                      )}
                     </div>
                   </article>
                 </div>
