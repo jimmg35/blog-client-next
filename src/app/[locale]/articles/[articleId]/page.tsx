@@ -1,13 +1,34 @@
-'use client'
-
-// import { getFileContent } from '@/lib/articles'
-import { loadArticleContent, loadArticleMeta } from '@/lib/getAllArticles'
 import { ArrowLeftIcon } from '@heroicons/react/24/solid'
 import React from 'react'
+import { readFileSync } from 'fs'
+import * as path from 'path'
 import { useLocale } from 'next-intl'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
-import MDD from '../../../../articles/this-is-test-article/index.mdx'
+
+export async function readMdxFile(mdxPath: string) {
+  try {
+    const fullPath = path.resolve(__dirname, mdxPath)
+    const content = await readFileSync(fullPath, 'utf8')
+    return content
+  } catch (err) {
+    console.error(`Error reading MDX file: ${err}`)
+  }
+}
+
+export async function loadArticleMeta(articleFilename: string) {
+  const meta = await readMdxFile(
+    path.join(process.cwd(), `src/articles/${articleFilename}/meta.json`)
+  )
+  return { meta, articleId: articleFilename }
+}
+
+export async function loadArticleContent(articleId: string) {
+  const content = await readMdxFile(
+    path.join(process.cwd(), `src/articles/${articleId}/index.mdx`)
+  )
+  return content
+}
 
 const PreviousPageButton = () => {
   const locale = useLocale()
@@ -44,17 +65,8 @@ const ArticlePage = async ({
                       </h1>
                     </header>
                     <div className="pt-6 prose prose-lg text-xl max-w-none dark:prose-invert mt-8">
-                      {/* {content && (
-                        <MDXRemote
-                          source={
-                            'http://202.39.9.102:1180/articles/welcome/content.mdx'
-                          }
-                        />
-                      )} */}
-                      {/* {content && (
-                        <div dangerouslySetInnerHTML={{ __html: content }} />
-                      )} */}
-                      <MDD />
+                      {/* {content && } */}
+                      {/* <MMDX /> */}
                     </div>
                   </article>
                 </div>

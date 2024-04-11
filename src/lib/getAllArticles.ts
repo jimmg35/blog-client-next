@@ -1,13 +1,15 @@
 import { IArticleMeta } from '@/types/articles'
-import glob from 'fast-glob'
-import { readFile, readdir } from 'fs/promises'
+// import glob from 'fast-glob'
+// import { readFile, readdir } from 'fs/promises'
+// import { readFileSync, readdirSync } from 'fs'
 import * as path from 'path'
 
 async function readMdxFile(mdxPath: string) {
   try {
     const fullPath = path.resolve(__dirname, mdxPath)
-    const content = await readFile(fullPath, 'utf8')
-    return content
+    // const content = await readFileSync(fullPath, 'utf8')
+    // return content
+    return ''
   } catch (err) {
     console.error(`Error reading MDX file: ${err}`)
   }
@@ -28,11 +30,16 @@ export async function loadArticleMeta(articleFilename: string) {
 }
 
 export async function getAllArticlesMeta() {
-  const articles = await readdir(path.join(process.cwd(), 'src/articles'))
-  const metas = []
-  for (let article of articles) {
-    const { meta, articleId } = await loadArticleMeta(article)
-    if (meta) metas.push({ meta: JSON.parse(meta) as IArticleMeta, articleId })
-  }
-  return metas
+  // const articles = await readdirSync(path.join(process.cwd(), 'src/articles'))
+  // const metas = []
+  // for (let article of articles) {
+  //   const { meta, articleId } = await loadArticleMeta(article)
+  //   if (meta) metas.push({ meta: JSON.parse(meta) as IArticleMeta, articleId })
+  // }
+  // return metas
+  // let articleFilenames = await glob(['*.mdx', '*/index.mdx'], {
+  //   cwd: path.join(process.cwd(), 'src/articles')
+  // })
+  // console.log(articleFilenames)
+  return []
 }
