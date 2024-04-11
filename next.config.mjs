@@ -8,6 +8,7 @@ const withNextIntl = createNextIntlPlugin()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   reactStrictMode: false,
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx']
 }
