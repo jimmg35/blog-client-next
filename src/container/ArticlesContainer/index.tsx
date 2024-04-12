@@ -34,7 +34,11 @@ export async function getAllArticlesMeta() {
 }
 
 const ArticlesContainer = async () => {
-  const metas = await getAllArticlesMeta()
+  const metas = (await getAllArticlesMeta()).sort(
+    (a, b) =>
+      new Date(b.meta.modifiedTime).getTime() -
+      new Date(a.meta.modifiedTime).getTime()
+  )
 
   return (
     <main className="">

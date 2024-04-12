@@ -14,7 +14,7 @@ export interface IGoogleDriveFile {
   modifiedTime: string
 }
 
-export type ArticleCategory = 'general' | 'gis' | 'review'
+export type ArticleCategory = 'general' | 'gis' | 'review' | 'tech'
 
 export interface IArticleMeta {
   title: string

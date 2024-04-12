@@ -2,7 +2,7 @@ import ArticleChip from '@/component/ArticleChip'
 import { IArticleMeta } from '@/types/articles'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import React from 'react'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 
 const Article = ({
@@ -13,6 +13,7 @@ const Article = ({
   meta: IArticleMeta
 }) => {
   const locale = useLocale()
+  const t = useTranslations('Articles')
   return (
     <article className="group relative flex flex-col items-start">
       <h2 className="text-base font-semibold tracking-tight ">
@@ -44,7 +45,7 @@ const Article = ({
         {category.map((cat, index) => (
           <ArticleChip key={index} category={cat} />
         ))}
-        Read article
+        {t('Read')}
         <ArrowTopRightOnSquareIcon className="w-4 h-4 ml-1" />
       </div>
     </article>

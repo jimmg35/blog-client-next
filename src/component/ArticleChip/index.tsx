@@ -8,7 +8,8 @@ const ArticleChip = ({ category }: { category: ArticleCategory }) => {
   const CategoryName: { [key in ArticleCategory]: string } = {
     general: t('CategoryGeneral'),
     gis: t('CategoryGIS'),
-    review: t('CategoryReview')
+    review: t('CategoryReview'),
+    tech: t('CategoryTech')
   }
 
   const CategoryColor: { [key in ArticleCategory]: string } = {
@@ -16,7 +17,8 @@ const ArticleChip = ({ category }: { category: ArticleCategory }) => {
       'inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10',
     gis: 'inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20',
     review:
-      'inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10'
+      'inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10',
+    tech: 'inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10'
   }
 
   return (

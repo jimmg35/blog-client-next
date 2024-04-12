@@ -79,8 +79,10 @@
   "Articles": {
     "Title": "I also enjoy writing articles and sharing my thoughts on various topics.",
     "Description": "Here are some of my articles, which cover a wide range of topics, from GIS technology to journal paper review.",
+    "Read": "Read article",
     "CategoryGIS": "GIS",
     "CategoryGeneral": "General",
-    "CategoryReview": "Review"
+    "CategoryReview": "Review",
+    "CategoryTech": "Tech"
   }
 }

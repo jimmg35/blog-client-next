@@ -1,4 +1,3 @@
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 
 const Article = ({
@@ -29,13 +28,13 @@ const Article = ({
         {event}
       </p>
       <p className="relative z-10 mt-2 text-sm ">{description}</p>
-      <div
+      {/* <div
         aria-hidden="true"
         className="relative z-10 mt-4 flex items-center gap-1 text-sm font-medium text-primary"
       >
         More
         <ArrowUpRightIcon className="h-3 w-3" />
-      </div>
+      </div> */}
     </article>
   )
 }
