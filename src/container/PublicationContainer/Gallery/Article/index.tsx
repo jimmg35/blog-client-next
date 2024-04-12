@@ -1,4 +1,3 @@
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 
 const Article = ({
