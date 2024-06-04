@@ -7,7 +7,7 @@ const Article = ({
 }: {
   title: string
   event: string
-  description: string
+  description: string | React.ReactNode
 }) => {
   return (
     <article className="group relative flex flex-col items-start">
@@ -15,7 +15,7 @@ const Article = ({
         <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-base-300 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
         <a>
           <span className="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-          <span className="relative z-10">{title}</span>
+          <p className="relative z-10 text-justify">{title}</p>
         </a>
       </h3>
       <p className="relative z-10 order-first mb-3 flex items-center text-sm pl-3.5">
@@ -28,13 +28,6 @@ const Article = ({
         {event}
       </p>
       <p className="relative z-10 mt-2 text-sm ">{description}</p>
-      {/* <div
-        aria-hidden="true"
-        className="relative z-10 mt-4 flex items-center gap-1 text-sm font-medium text-primary"
-      >
-        More
-        <ArrowUpRightIcon className="h-3 w-3" />
-      </div> */}
     </article>
   )
 }
