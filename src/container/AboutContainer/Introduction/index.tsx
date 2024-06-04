@@ -125,7 +125,8 @@ const Introduction = () => {
       <div className="lg:pl-20">
         <div className="max-w-xs px-2.5 lg:max-w-none relative">
           <Image
-            src="/images/chiwawa.jpeg"
+            // src="/images/chiwawa.jpeg"
+            src="/favicon.svg"
             width={440}
             height={440}
             alt="avatar"
@@ -138,10 +139,9 @@ const Introduction = () => {
           {t('Title')} <span className="JobTitle">{t('GIScience')}</span>.
         </h1>
         <div className="mt-6 text-lg prose space-y-7 dark:prose-invert">
-          <p className="text-justify">{t('intro')}</p>
+          <p className="text-justify indent-8">{t('intro')}</p>
           <p className="text-justify">
-            <b>{t('highlight_title_0')}:</b>
-            {t('highlight_content_0')}
+            <b>{t('highlight_title_0')}:</b> {t('highlight_content_0')}
           </p>
           <p className="text-justify">
             <b>{t('highlight_title_1')}:</b>{' '}
@@ -168,7 +168,7 @@ const Introduction = () => {
             .
           </p>
 
-          <p>
+          <p className=" indent-8">
             I love Open Source, learning in public, and sharing what I learn
             with others.
           </p>

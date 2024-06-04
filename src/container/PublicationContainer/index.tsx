@@ -18,36 +18,66 @@ const PublicationContainer = () => {
                   <Article
                     title="An Approach Integrating Spatial Factors via Convolutional Operations in Artificial Neural Network: Real Estate Appraisal as Case Study."
                     event="Journal of Geographical Research. (Accepted)"
-                    description="Chang J. J., Chang K. C."
+                    description={
+                      <span>
+                        <span className="font-extrabold">Chang J. J.</span>,
+                        Chang K. C.
+                      </span>
+                    }
                   />
                   <Article
                     title="Estimation of space-time traffic corridor earthquake risk exposure based on cellular trajectory data."
                     event="Journal of Geographical Research, 74(105-141)."
-                    description="Chen Y. J., Chang J. J., Chang K. C."
+                    description={
+                      <span>
+                        Chen Y. J.,
+                        <span className="font-extrabold">Chang J. J.</span>,
+                        Chang K. C.
+                      </span>
+                    }
                   />
                 </Section>
                 <Section category={'Conference'}>
                   <Article
                     title="Semi-supervised Generative Adversarial Network for Identifying Cellphone Crop Images."
                     event="2023 Taiwan Geographic Information Society Annual Conference and Academic Symposium."
-                    description="Chang J. J., Chang K. C."
+                    description={
+                      <span>
+                        <span className="font-extrabold">Chang J. J.</span>,
+                        Chang K. C.
+                      </span>
+                    }
                   />
                   <Article
                     title="Constructing a Multi-temporal PM2.5 Estimation Model Using Temporal Geographically Weighted Regression."
                     event="2021 Taiwan Geographic Information Society Annual Conference and Academic Symposium."
-                    description="Chang, J. J., Chen, C. H., & Chang, K. C."
+                    description={
+                      <span>
+                        <span className="font-extrabold">Chang J. J.</span>,
+                        Chen, C. H., Chang, K. C.
+                      </span>
+                    }
                   />
                   <Article
                     title="Convolutional Neural Networks for Crop Image Recognition Based on Transfer Learning."
                     event="2020 Taiwan Geographic Information Society Annual Conference and Academic Symposium."
-                    description="Chang, J. J., & Chang, K. C."
+                    description={
+                      <span>
+                        <span className="font-extrabold">Chang J. J.</span>,
+                        Chang K. C.
+                      </span>
+                    }
                   />
                 </Section>
                 <Section category={'Presentations'}>
                   <Article
                     title="Using Convolution Neural Network as Environmental Features Extraction Pipeline – taken Real Estate Appraisal as a precedent."
                     event="2023 Association of American Geographers, Denver, CO."
-                    description="Chang J. J., Chang K. C."
+                    description={
+                      <span>
+                        <span className=" font-extrabold">Chang J. J.</span>
+                      </span>
+                    }
                   />
                 </Section>
               </Gallery>

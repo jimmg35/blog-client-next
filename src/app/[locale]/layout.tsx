@@ -73,6 +73,7 @@ export default function RootLayout({
       <html lang={locale} data-theme={theme ? theme.value : 'light'}>
         <head>
           <title>{t('tabTitle')}</title>
+          <link rel="icon" type="image/x-icon" href="/favicon.svg"></link>
         </head>
         <body className={`${noto.className} bg-base-300`}>
           <Background />

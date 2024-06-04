@@ -95,7 +95,7 @@ const ExternalLinks = () => {
       {externalLinks.map((link, index) => (
         <Link
           key={index}
-          className="group -m-1 p-1 fill-neutral-500 hover:fill-primary"
+          className="group -m-1 p-1 fill-neutral-500 hover:fill-primary transition"
           href={link.href}
           target="_blank"
           rel="noreferrer"
@@ -104,9 +104,9 @@ const ExternalLinks = () => {
         </Link>
       ))}
       <a
-        href="/docs/ChangCV.pdf"
+        href="/docs/chang-cv-prettified.pdf"
         download
-        className="text-sm px-5 py-1 rounded-lg flex items-center gap-2 bg-neutral-500 cursor-pointer fill-white text-white hover:bg-primary"
+        className="transition text-sm px-5 py-1 rounded-lg flex items-center gap-2 bg-neutral-500 cursor-pointer fill-white text-white hover:bg-primary"
       >
         <ArrowDownTrayIcon className="h-5 w-5  " />
         C. V.

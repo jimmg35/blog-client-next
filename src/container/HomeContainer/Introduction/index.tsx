@@ -11,7 +11,8 @@ const Introduction = () => {
       <div className="avatar">
         <div className="rounded-full w-20 border border-zinc-400">
           <Image
-            src="/images/chiwawa.jpeg"
+            // src="/images/chiwawa.jpeg"
+            src="/favicon.svg"
             width={80}
             height={80}
             alt="avatar"
@@ -30,8 +31,10 @@ const Introduction = () => {
           })}
         ></h1>
       </div>
-      <p className="mt-6 prose text-justify font-normal">{t('paragraph1')}</p>
-      <p className="mt-6 prose text-justify">{t('paragraph2')}</p>
+      <p className="mt-6 prose text-justify font-normal indent-8">
+        {t('paragraph1')}
+      </p>
+      <p className="mt-6 prose text-justify indent-8">{t('paragraph2')}</p>
     </>
   )
 }
