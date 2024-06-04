@@ -11,7 +11,8 @@ const Introduction = () => {
       <div className="avatar">
         <div className="rounded-full w-20 border border-zinc-400">
           <Image
-            src="/images/chiwawa.jpeg"
+            // src="/images/chiwawa.jpeg"
+            src="/favicon.svg"
             width={80}
             height={80}
             alt="avatar"

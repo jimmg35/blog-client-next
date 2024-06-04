@@ -125,7 +125,8 @@ const Introduction = () => {
       <div className="lg:pl-20">
         <div className="max-w-xs px-2.5 lg:max-w-none relative">
           <Image
-            src="/images/chiwawa.jpeg"
+            // src="/images/chiwawa.jpeg"
+            src="/favicon.svg"
             width={440}
             height={440}
             alt="avatar"
