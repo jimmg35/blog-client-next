@@ -11,7 +11,7 @@ import {
 import React from 'react'
 // import type { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
-import { Arimo, Merriweather, Noto_Sans_TC } from 'next/font/google'
+import { Noto_Sans_TC } from 'next/font/google'
 import { cookies } from 'next/headers'
 import '../globals.css'
 
@@ -19,11 +19,6 @@ const noto = Noto_Sans_TC({
   weight: ['400', '500', '800'],
   subsets: ['latin']
 })
-
-// const noto = Arimo({
-//   weight: ['400', '500', '700'],
-//   subsets: ['latin']
-// })
 
 // export const metadata: Metadata = {
 //   title: 'Create Next App',
