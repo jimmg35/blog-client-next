@@ -30,8 +30,10 @@ const Introduction = () => {
           })}
         ></h1>
       </div>
-      <p className="mt-6 prose text-justify font-normal">{t('paragraph1')}</p>
-      <p className="mt-6 prose text-justify">{t('paragraph2')}</p>
+      <p className="mt-6 prose text-justify font-normal indent-8">
+        {t('paragraph1')}
+      </p>
+      <p className="mt-6 prose text-justify indent-8">{t('paragraph2')}</p>
     </>
   )
 }
