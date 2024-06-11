@@ -1,20 +1,7 @@
 import { ArticleCategory } from '@/types/articles'
 import React from 'react'
-import { useLocale, useTranslations } from 'next-intl'
-import Link from 'next/link'
 
-const ArticleChip = ({ category }: { category: ArticleCategory }) => {
-  const t = useTranslations('Articles')
-
-  const locale = useLocale()
-
-  const CategoryName: { [key in ArticleCategory]: string } = {
-    general: t('CategoryGeneral'),
-    gis: t('CategoryGIS'),
-    review: t('CategoryReview'),
-    tech: t('CategoryTech')
-  }
-
+const ClientArticleChip = ({ category }: { category: ArticleCategory }) => {
   const CategoryColor: { [key in ArticleCategory]: string } = {
     general:
       'inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 bg-gray-50 text-gray-600 ring-gray-500/10 bg-opacity-90 calcite-hover',
@@ -25,13 +12,11 @@ const ArticleChip = ({ category }: { category: ArticleCategory }) => {
   }
 
   return (
-    <Link
-      href={`/${locale}/articles?category=${category}`}
-      className={` ${CategoryColor[category]} select-none cursor-pointer`}
-    >
-      {CategoryName[category]}
-    </Link>
+    <span className={` ${CategoryColor[category]} select-none cursor-pointer`}>
+      {/* {CategoryName[category]} */}
+      {category}
+    </span>
   )
 }
 
-export default ArticleChip
+export default ClientArticleChip
