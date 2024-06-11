@@ -6,6 +6,12 @@
   .calcite-box {
     @apply shadow rounded-md;
   }
+  .calcite-focus {
+    @apply focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10;
+  }
+  .calcite-hover {
+    @apply border border-error hover:border-primary hover:ring-4 hover:ring-primary/10;
+  }
   /* 2A2A2B */
 }
 
