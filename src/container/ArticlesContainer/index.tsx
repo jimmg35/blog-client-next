@@ -2,9 +2,11 @@ import { IArticleMeta } from '@/types/articles'
 import React from 'react'
 import { readFileSync, readdirSync } from 'fs'
 import * as path from 'path'
+import Category from './Category'
 import Gallery from './Gallery'
 import Article from './Gallery/Article'
 import Header from './Header'
+import Search from './Search'
 
 export async function readMdxFile(mdxPath: string) {
   try {
@@ -47,6 +49,8 @@ const ArticlesContainer = async () => {
           <div className="relative px-4 sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <Header />
+              <Search />
+              <Category />
               <Gallery>
                 {metas.map(({ meta, articleId }, index) => (
                   <Article key={index} articleId={articleId} meta={meta} />
