@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTranslations } from 'next-intl'
 import Gallery from './Gallery'
 import Article from './Gallery/Article'
 import Section from './Gallery/Section'
 import Header from './Header'
 
 const PublicationContainer = () => {
+  const t = useTranslations('Publications')
   return (
     <main className="">
       <div className="sm:px-8 mt-16 sm:mt-32">
@@ -14,7 +16,7 @@ const PublicationContainer = () => {
               <Header />
 
               <Gallery>
-                <Section category={'Journal'}>
+                <Section category={t('Journal')}>
                   <Article
                     title="An Approach Integrating Spatial Factors via Convolutional Operations in Artificial Neural Network: Real Estate Appraisal as Case Study."
                     event="Journal of Geographical Research. (Accepted)"
@@ -35,9 +37,10 @@ const PublicationContainer = () => {
                         Chang K. C.
                       </span>
                     }
+                    link="https://www.geo.ntnu.edu.tw/wp-content/uploads/2022/03/745.pdf"
                   />
                 </Section>
-                <Section category={'Conference'}>
+                <Section category={t('Conference')}>
                   <Article
                     title="Semi-supervised Generative Adversarial Network for Identifying Cellphone Crop Images."
                     event="2023 Taiwan Geographic Information Society Annual Conference and Academic Symposium."
@@ -47,6 +50,7 @@ const PublicationContainer = () => {
                         Chang K. C.
                       </span>
                     }
+                    link="https://drive.google.com/file/d/1IkbgnnR76X1OpTka3SuzTKI22aQPkd56/view"
                   />
                   <Article
                     title="Constructing a Multi-temporal PM2.5 Estimation Model Using Temporal Geographically Weighted Regression."
@@ -57,6 +61,7 @@ const PublicationContainer = () => {
                         Chen, C. H., Chang, K. C.
                       </span>
                     }
+                    link="https://tgis2021.conf.tw/site/userdata/1383/file/presentation%20agenda%201016.pdf"
                   />
                   <Article
                     title="Convolutional Neural Networks for Crop Image Recognition Based on Transfer Learning."
@@ -69,7 +74,7 @@ const PublicationContainer = () => {
                     }
                   />
                 </Section>
-                <Section category={'Presentations'}>
+                <Section category={t('Presentation')}>
                   <Article
                     title="Using Convolution Neural Network as Environmental Features Extraction Pipeline – taken Real Estate Appraisal as a precedent."
                     event="2023 Association of American Geographers, Denver, CO."
@@ -78,6 +83,7 @@ const PublicationContainer = () => {
                         <span className=" font-extrabold">Chang J. J.</span>
                       </span>
                     }
+                    link="https://aag.secure-platform.com/aag2023/solicitations/39/sessiongallery/5646"
                   />
                 </Section>
               </Gallery>

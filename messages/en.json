@@ -74,7 +74,11 @@
   },
   "Publications": {
     "Title": "I actively pursued opportunities to share my findings with the academic community.",
-    "Description": "These are several of my publications, including conference, journal paper, and conference presentations. Even though this isn't much, everyone starts somewhere, right?"
+    "Description": "These are several of my publications, including conference, journal paper, and conference presentations. Even though this isn't much, everyone starts somewhere, right?",
+    "Journal": "Journal",
+    "Conference": "Conference",
+    "Presentation": "Presentation",
+    "Link": "Link"
   },
   "Articles": {
     "Title": "I also enjoy writing articles and sharing my thoughts on various topics.",

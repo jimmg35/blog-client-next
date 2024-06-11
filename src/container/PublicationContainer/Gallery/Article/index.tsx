@@ -1,20 +1,25 @@
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import React from 'react'
+import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 const Article = ({
   title,
   event,
-  description
+  description,
+  link
 }: {
   title: string
   event: string
   description: string | React.ReactNode
+  link?: string
 }) => {
+  const t = useTranslations('Publications')
   return (
     <article className="group relative flex flex-col items-start">
       <h3 className="text-base font-semibold tracking-tight ">
         <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-base-300 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
         <a>
-          <span className="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
           <p className="relative z-10 text-justify">{title}</p>
         </a>
       </h3>
@@ -27,7 +32,17 @@ const Article = ({
         </span>
         {event}
       </p>
-      <p className="relative z-10 mt-2 text-sm ">{description}</p>
+      <div className="flex items-center justify-center mt-2 gap-4">
+        <p className="relative z-10 text-sm ">{description}</p>
+        {link && (
+          <Link href={link} target="_blank">
+            <div className=" cursor-pointer relative z-10 flex items-center gap-2 text-sm font-medium text-primary">
+              {t('Link')}
+              <ArrowUpRightIcon className="h-3 w-3" />
+            </div>
+          </Link>
+        )}
+      </div>
     </article>
   )
 }
