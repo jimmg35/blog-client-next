@@ -38,9 +38,9 @@ const Search = () => {
           />
         </div>
         <dialog className="modal" ref={dialogRef}>
-          <div className="modal-box p-0 rounded-md max-w-[800px] top-[125px] absolute">
+          <div className="modal-box overflow-hidden p-0 rounded-md max-w-[800px] top-[125px] absolute">
             <SearchBox />
-            <div className="p-8 pt-0 pb-10">
+            <div className="p-8 pt-0 pb-10 max-h-[400px] overflow-auto">
               <Hits hitComponent={Hit} />
             </div>
           </div>

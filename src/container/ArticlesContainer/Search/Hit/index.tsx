@@ -43,7 +43,7 @@ function Hit({
         <p className="relative z-10 mt-2 text-sm">{description}</p>
         <div
           aria-hidden="true"
-          className="relative z-10 mt-4 flex items-center gap-2 text-sm font-medium text-primary"
+          className="relative z-10 mt-4 flex items-center flex-wrap gap-2 text-sm font-medium text-primary"
         >
           {tagsCollection.tags.map((cat, index) => (
             <ClientArticleChip key={index} category={cat as ArticleCategory} />
