@@ -1,19 +1,28 @@
 'use client'
 
-import Input from '@/component/Input'
-import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
+import algoliasearch from 'algoliasearch/lite'
 import React from 'react'
+import { Hits, InstantSearch } from 'react-instantsearch-dom'
+import Hit from './Hit'
+import SearchBox from './SearchBox'
+
+const searchClient = algoliasearch(
+  process.env.NEXT_PUBLIC_ALGOLIA_APP_ID
+    ? process.env.NEXT_PUBLIC_ALGOLIA_APP_ID
+    : '',
+  process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY
+    ? process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY
+    : ''
+)
 
 const Search = () => {
   return (
-    <div className="max-w-2xl mt-8 sm:mt-10">
-      <Input
-        icon={<MagnifyingGlassIcon className="w-5 h-5" />}
-        placeholder="search anything..."
-        value=""
-        onChange={() => {}}
-      />
-    </div>
+    <InstantSearch searchClient={searchClient} indexName="my_blog">
+      <div className="max-w-2xl mt-8 sm:mt-10">
+        <SearchBox />
+        <Hits hitComponent={Hit} />
+      </div>
+    </InstantSearch>
   )
 }
 
