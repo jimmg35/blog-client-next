@@ -1,4 +1,3 @@
-import ArticleChip from '@/component/ArticleChip'
 import ClientArticleChip from '@/component/ClientArticleChip'
 import { ArticleCategory } from '@/types/articles'
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'

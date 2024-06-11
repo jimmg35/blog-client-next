@@ -1,8 +1,7 @@
 const dotenv = require('dotenv')
 const algoliasearch = require('algoliasearch/lite')
-// import { readFileSync, readdirSync } from 'fs'
-const { readdirSync, readFileSync } = require('fs')
 const path = require('path')
+const { readdirSync, readFileSync } = require('fs')
 
 const readMdxFile = async (mdxPath) => {
   try {
