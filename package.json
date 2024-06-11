@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node ./src/algoliasearch/index.js",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
@@ -21,6 +22,7 @@
     "algoliasearch": "^4.23.3",
     "classnames": "^2.5.1",
     "daisyui": "^4.9.0",
+    "dotenv": "^16.4.5",
     "googleapis": "^134.0.0",
     "next": "14.1.4",
     "next-client-cookies": "^1.0.6",
