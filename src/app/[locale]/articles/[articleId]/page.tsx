@@ -6,13 +6,13 @@ import moment from 'moment'
 import * as path from 'path'
 import { remark } from 'remark'
 import { useLocale } from 'next-intl'
-import { headers } from 'next/headers'
+// import { headers } from 'next/headers'
 import Link from 'next/link'
 
 const PreviousPageButton = () => {
   const locale = useLocale()
-  const headersList = headers()
-  const header_url = headersList.get('x-url') || '/articles'
+  // const headersList = headers()
+  // const header_url = headersList.get('x-url') || '/articles'
   return (
     <Link
       href={`/${locale}/articles`}
