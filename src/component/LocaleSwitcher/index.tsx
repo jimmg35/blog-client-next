@@ -43,7 +43,7 @@ const LocaleSwitcher = () => {
     <>
       <label
         htmlFor="locale_modal"
-        className="h-[38px] calcite-box rounded-full px-3 py-2 bg-base-100 border border-error cursor-pointer hover:text-primary"
+        className="h-[38px] calcite-box rounded-full px-3 py-2 bg-base-100 cursor-pointer hover:text-primary"
       >
         <LanguageIcon className="w-5 h-5" />
       </label>
