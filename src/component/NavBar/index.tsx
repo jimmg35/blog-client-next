@@ -27,7 +27,7 @@ const NavBar = ({
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <div className="relative flex gap-4">
                 <div className="flex flex-1">
-                  <div className="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
+                  <div className="md:hidden h-10 w-10 rounded-full bg-base-100 p-0.5 backdrop-blur calcite-box">
                     <a href="/">
                       <Image
                         src="/favicon.svg"
