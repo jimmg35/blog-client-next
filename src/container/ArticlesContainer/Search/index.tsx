@@ -37,7 +37,7 @@ const Search = () => {
             placeholder="Search for articles!"
           />
         </div>
-        <dialog className="modal" ref={dialogRef}>
+        <dialog className="modal backdrop-blur-sm" ref={dialogRef}>
           <div className="modal-box overflow-hidden p-0 rounded-md max-w-[800px] top-[125px] absolute">
             <SearchBox />
             <div className="p-8 pt-0 pb-10 max-h-[400px] overflow-auto">

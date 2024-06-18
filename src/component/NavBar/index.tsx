@@ -53,7 +53,7 @@ const NavBar = ({
                       id="menu_modal"
                       className="modal-toggle"
                     />
-                    <div className="modal" role="dialog">
+                    <div className="modal backdrop-blur-sm" role="dialog">
                       <div className="modal-box absolute top-[25px]">
                         <div className="flex justify-between items-center">
                           <h3 className="text-sm font-light">
