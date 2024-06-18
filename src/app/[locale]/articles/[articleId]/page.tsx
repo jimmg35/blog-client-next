@@ -1,12 +1,14 @@
+import matter from 'gray-matter'
 import remarkHTML from 'remark-html'
 import { ArrowLeftIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { readFileSync } from 'fs'
+// import { headers } from 'next/headers'
+import fs from 'fs'
 import moment from 'moment'
 import * as path from 'path'
 import { remark } from 'remark'
 import { useLocale } from 'next-intl'
-// import { headers } from 'next/headers'
 import Link from 'next/link'
 
 const PreviousPageButton = () => {
@@ -33,32 +35,12 @@ const ArticlePage = async ({
     return result.toString()
   }
 
-  const readMdxFile = async (mdxPath: string) => {
-    try {
-      const fullPath = path.resolve(__dirname, mdxPath)
-      const content = await readFileSync(fullPath, 'utf8')
-      return content
-    } catch (err) {
-      console.error(`Error reading MDX file: ${err}`)
-    }
-  }
+  const fileContents = fs.readFileSync(
+    path.join(process.cwd(), `src/articles/${articleId}/index.mdx`),
+    'utf8'
+  )
 
-  const loadArticleMeta = async (articleFilename: string) => {
-    const meta = await readMdxFile(
-      path.join(process.cwd(), `src/articles/${articleFilename}/meta.json`)
-    )
-    return { meta, articleId: articleFilename }
-  }
-
-  const loadArticleContent = async (articleId: string) => {
-    const content = await readMdxFile(
-      path.join(process.cwd(), `src/articles/${articleId}/index.mdx`)
-    )
-    return content
-  }
-
-  const { meta } = await loadArticleMeta(articleId)
-  const content = await loadArticleContent(articleId)
+  const { data: meta, content } = matter(fileContents)
   const mdHtmlContent = content ? await markdownToHTML(content) : undefined
   return (
     <main>
@@ -77,16 +59,14 @@ const ArticlePage = async ({
                     >
                       <span className="h-4 w-0.5 rounded-full bg-primary"></span>
                       <span className="ml-3">
-                        {meta &&
-                          moment(
-                            JSON.parse(meta).modifiedTime,
-                            'YYYY-MM-DD'
-                          ).format('MMMM D, YYYY')}
+                        {moment(meta.modifiedTime, 'YYYY-MM-DD').format(
+                          'MMMM D, YYYY'
+                        )}
                       </span>
                     </time>
                     <header className="flex flex-col">
                       <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
-                        {meta && JSON.parse(meta).title}
+                        {meta.title}
                       </h1>
                     </header>
                     <div>
