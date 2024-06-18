@@ -13,7 +13,8 @@ export async function loadArticleMeta(articleId: string) {
 }
 
 export async function getAllArticlesMeta(
-  category: ArticleCategory | undefined = undefined
+  category: ArticleCategory | undefined = undefined,
+  page: number | undefined = undefined
 ): Promise<
   {
     meta: IArticleMeta
@@ -33,6 +34,16 @@ export async function getAllArticlesMeta(
       metas.push({ meta: meta, articleId })
     }
   }
-  // console.log(metas)
-  return metas
+
+  const sorted = metas.sort(
+    (a, b) =>
+      new Date(b.meta.modifiedTime).getTime() -
+      new Date(a.meta.modifiedTime).getTime()
+  )
+
+  if (!page) return sorted
+  const perPage = 4
+  const start = (page - 1) * perPage
+  const end = start + perPage
+  return sorted.slice(start, end)
 }

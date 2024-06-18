@@ -1,3 +1,4 @@
+import Pagination from '@/component/Pagination'
 import { getAllArticlesMeta } from '@/lib/articles'
 import { ArticleCategory, IArticleMeta } from '@/types/articles'
 import React from 'react'
@@ -10,11 +11,13 @@ import Header from './Header'
 import Search from './Search'
 
 const ArticlesContainer = async ({
-  category
+  category,
+  page
 }: {
   category: ArticleCategory | undefined
+  page: number
 }) => {
-  const metas = (await getAllArticlesMeta(category)).sort(
+  const metas = (await getAllArticlesMeta(category, page)).sort(
     (a, b) =>
       new Date(b.meta.modifiedTime).getTime() -
       new Date(a.meta.modifiedTime).getTime()
@@ -34,6 +37,7 @@ const ArticlesContainer = async ({
                   <Article key={index} articleId={articleId} meta={meta} />
                 ))}
               </Gallery>
+              <Pagination />
             </div>
           </div>
         </div>

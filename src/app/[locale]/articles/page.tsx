@@ -3,9 +3,12 @@ import { ArticleCategory } from '@/types/articles'
 import React from 'react'
 
 export default function Articles({
-  searchParams: { category }
+  searchParams: { category, page = 1 }
 }: {
-  searchParams: { category?: ArticleCategory }
+  searchParams: {
+    category?: ArticleCategory
+    page?: number
+  }
 }) {
-  return <ArticlesContainer category={category} />
+  return <ArticlesContainer category={category} page={page} />
 }
