@@ -17,7 +17,7 @@ const config: Config = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    // require('daisyui'),
+    require('daisyui'),
     require('tailwind-typewriter')({
       wordsets: {
         en: {
@@ -40,28 +40,28 @@ const config: Config = {
         }
       }
     })
-  ]
-  // daisyui: {
-  //   themes: [
-  //     {
-  //       light: {
-  //         ...require('daisyui/src/theming/themes')['light'],
-  //         primary: '#34D399',
-  //         'base-100': '#FFFFFF',
-  //         'base-200': '#FFFFFF',
-  //         'base-300': '#FAFAFA',
-  //         error: '#F4F4F5'
-  //       },
-  //       dark: {
-  //         ...require('daisyui/src/theming/themes')['dark'],
-  //         primary: '#34D399',
-  //         'base-100': '#252529',
-  //         'base-200': '#18181B',
-  //         'base-300': '#000000',
-  //         error: '#27272C'
-  //       }
-  //     }
-  //   ]
-  // }
+  ],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['light'],
+          primary: '#34D399',
+          'base-100': '#FFFFFF',
+          'base-200': '#FFFFFF',
+          'base-300': '#FAFAFA',
+          error: '#F4F4F5'
+        },
+        dark: {
+          ...require('daisyui/src/theming/themes')['dark'],
+          primary: '#34D399',
+          'base-100': '#252529',
+          'base-200': '#18181B',
+          'base-300': '#000000',
+          error: '#27272C'
+        }
+      }
+    ]
+  }
 }
 export default config
