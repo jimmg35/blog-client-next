@@ -33,5 +33,6 @@ export async function getAllArticlesMeta(
       metas.push({ meta: meta, articleId })
     }
   }
+  // console.log(metas)
   return metas
 }
