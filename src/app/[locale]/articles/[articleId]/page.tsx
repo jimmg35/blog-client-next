@@ -92,7 +92,7 @@ const ArticlePage = async ({
                     <div>
                       {mdHtmlContent && (
                         <div
-                          className="mt-8 pt-6 prose prose-lg text-base max-w-none  "
+                          className="article mt-8 pt-6 prose prose-lg text-base max-w-none  "
                           dangerouslySetInnerHTML={{ __html: mdHtmlContent }}
                         />
                       )}
