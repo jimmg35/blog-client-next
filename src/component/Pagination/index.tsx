@@ -1,7 +1,15 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
 import React from 'react'
+import classNames from 'classnames'
+import Link from 'next/link'
 
-const Pagination = () => {
+const Pagination = ({
+  page,
+  totalPages
+}: {
+  page: number
+  totalPages: number
+}) => {
   return (
     <div className="flex items-center justify-between mt-10  bg-base-200 px-4 py-3 sm:px-6">
       <div className="flex flex-1 justify-between sm:hidden">
@@ -25,10 +33,7 @@ const Pagination = () => {
           <p className="text-sm">
             Showing <span className="font-medium">1</span> to{' '}
             <span className="font-medium">10</span> of{' '}
-            <span className="font-medium text-black ring-2 ring-primary/50 bg-primary rounded-full px-2 py-1 mx-1">
-              97
-            </span>{' '}
-            results
+            <span className="font-bold ">97</span> results
           </p>
         </div>
         <div>
@@ -43,28 +48,93 @@ const Pagination = () => {
               <span className="sr-only">Previous</span>
               <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
             </a>
-            <a
-              href="#"
-              aria-current="page"
-              className="relative z-10 inline-flex items-center bg-primary px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
-            >
-              1
-            </a>
-            <a
-              href="#"
-              className="relative inline-flex items-center px-4 py-2 text-sm font-semibold  hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-            >
-              2
-            </a>
-            <a
-              href="#"
-              className="relative hidden items-center px-4 py-2 text-sm font-semibold   hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
-            >
-              3
-            </a>
-            <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold   focus:outline-offset-0">
-              ...
-            </span>
+            {/* {totalPages >= 7 ? (
+              <>
+                <a
+                  href="#"
+                  aria-current="page"
+                  className={classNames({
+                    'relative hidden items-center px-4 py-2 text-sm font-semibold focus:z-20 focus:outline-offset-0 md:inline-flex':
+                      true,
+                    'bg-primary text-white': 1 === page
+                  })}
+                >
+                  1
+                </a>
+                <a
+                  href="#"
+                  className={classNames({
+                    'relative hidden items-center px-4 py-2 text-sm font-semibold focus:z-20 focus:outline-offset-0 md:inline-flex':
+                      true,
+                    'bg-primary text-white': 2 === page
+                  })}
+                >
+                  2
+                </a>
+                <a
+                  href="#"
+                  className={classNames({
+                    'relative hidden items-center px-4 py-2 text-sm font-semibold focus:z-20 focus:outline-offset-0 md:inline-flex':
+                      true,
+                    'bg-primary text-white': 3 === page
+                  })}
+                >
+                  3
+                </a>
+                <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold focus:outline-offset-0">
+                  ...
+                </span>
+                <a
+                  href="#"
+                  className={classNames({
+                    'relative hidden items-center px-4 py-2 text-sm font-semibold focus:z-20 focus:outline-offset-0 md:inline-flex':
+                      true,
+                    'bg-primary text-white': totalPages - 2 === page
+                  })}
+                >
+                  {totalPages - 2}
+                </a>
+                <a
+                  href="#"
+                  className={classNames({
+                    'relative hidden items-center px-4 py-2 text-sm font-semibold focus:z-20 focus:outline-offset-0 md:inline-flex':
+                      true,
+                    'bg-primary text-white': totalPages - 1 === page
+                  })}
+                >
+                  {totalPages - 1}
+                </a>
+                <a
+                  href="#"
+                  className={classNames({
+                    'relative hidden items-center px-4 py-2 text-sm font-semibold focus:z-20 focus:outline-offset-0 md:inline-flex':
+                      true,
+                    'bg-primary text-white': totalPages === page
+                  })}
+                >
+                  {totalPages}
+                </a>
+              </>
+            ) : ( */}
+            {Array.from({ length: totalPages }, (_, index) => index).map(
+              (value, index) => {
+                return (
+                  <Link
+                    key={index}
+                    href={`/en/articles?page=${index + 1}`}
+                    className={classNames({
+                      'relative hidden items-center px-4 py-2 text-sm font-semibold focus:z-20 focus:outline-offset-0 md:inline-flex':
+                        true,
+                      'bg-primary text-white': index + 1 === Number(page)
+                    })}
+                  >
+                    {index + 1}
+                  </Link>
+                )
+              }
+            )}
+            {/* )} */}
+
             <a
               href="#"
               className="relative inline-flex items-center rounded-r-md px-2 py-2  hover:bg-gray-50 focus:z-20 focus:outline-offset-0"

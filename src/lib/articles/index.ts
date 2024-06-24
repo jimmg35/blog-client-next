@@ -1,3 +1,4 @@
+import { perPage } from '@/container/ArticlesContainer'
 import { ArticleCategory, IArticleMeta } from '@/types/articles'
 import matter from 'gray-matter'
 import fs from 'fs'
@@ -42,8 +43,27 @@ export async function getAllArticlesMeta(
   )
 
   if (!page) return sorted
-  const perPage = 4
+
   const start = (page - 1) * perPage
   const end = start + perPage
   return sorted.slice(start, end)
+}
+
+export async function getArticleCount(
+  category: ArticleCategory | undefined = undefined
+) {
+  const articleIds = await fs.readdirSync(
+    path.join(process.cwd(), 'src/articles')
+  )
+  const metas = []
+  for (const articleId of articleIds) {
+    const meta = (await loadArticleMeta(articleId)) as IArticleMeta
+    if (category) {
+      const isInCategory = meta.category.includes(category)
+      if (isInCategory) metas.push({ meta: meta, articleId })
+    } else {
+      metas.push({ meta: meta, articleId })
+    }
+  }
+  return metas.length
 }

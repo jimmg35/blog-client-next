@@ -1,14 +1,14 @@
 import Pagination from '@/component/Pagination'
-import { getAllArticlesMeta } from '@/lib/articles'
-import { ArticleCategory, IArticleMeta } from '@/types/articles'
+import { getAllArticlesMeta, getArticleCount } from '@/lib/articles'
+import { ArticleCategory } from '@/types/articles'
 import React from 'react'
-import { readFileSync, readdirSync } from 'fs'
-import * as path from 'path'
 import Category from './Category'
 import Gallery from './Gallery'
 import Article from './Gallery/Article'
 import Header from './Header'
 import Search from './Search'
+
+export const perPage = 4
 
 const ArticlesContainer = async ({
   category,
@@ -22,6 +22,8 @@ const ArticlesContainer = async ({
       new Date(b.meta.modifiedTime).getTime() -
       new Date(a.meta.modifiedTime).getTime()
   )
+
+  const count = await getArticleCount()
 
   return (
     <main className="">
@@ -37,7 +39,7 @@ const ArticlesContainer = async ({
                   <Article key={index} articleId={articleId} meta={meta} />
                 ))}
               </Gallery>
-              <Pagination />
+              <Pagination page={page} totalPages={Math.ceil(count / perPage)} />
             </div>
           </div>
         </div>
