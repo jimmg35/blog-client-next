@@ -10,7 +10,10 @@ const withNextIntl = createNextIntlPlugin()
 const nextConfig = {
   output: 'standalone',
   reactStrictMode: false,
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx']
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  experimental: {
+    scrollRestoration: true
+  }
 }
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
