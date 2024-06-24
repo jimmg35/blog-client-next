@@ -2,37 +2,22 @@ const dotenv = require('dotenv')
 const algoliasearch = require('algoliasearch/lite')
 const path = require('path')
 const { readdirSync, readFileSync } = require('fs')
-
-const readMdxFile = async (mdxPath) => {
-  try {
-    const fullPath = path.resolve(__dirname, mdxPath)
-    const content = await readFileSync(fullPath, 'utf8')
-    return content
-  } catch (err) {
-    console.error(`Error reading MDX file: ${err}`)
-  }
-}
+const matter = require('gray-matter')
 
 const loadArticleMeta = async (articleId) => {
-  const meta = await readMdxFile(
-    path.join(process.cwd(), `src/articles/${articleId}/meta.json`)
+  const fileContents = readFileSync(
+    path.join(process.cwd(), `src/articles/${articleId}/index.mdx`),
+    'utf8'
   )
-  return meta
-}
-
-const loadArticleContent = async (articleId) => {
-  const content = await readMdxFile(
-    path.join(process.cwd(), `src/articles/${articleId}/index.mdx`)
-  )
-  return content
+  const { data: meta, content } = matter(fileContents)
+  return { meta, content }
 }
 
 const getAllArticles = async () => {
   const articles = await readdirSync(path.join(process.cwd(), 'src/articles'))
   const searchObjects = []
   for (const article of articles) {
-    const meta = JSON.parse(await loadArticleMeta(article))
-    const content = await loadArticleContent(article)
+    const { meta, content } = await loadArticleMeta(article)
     const searchObject = {
       objectID: article,
       type: 'article',

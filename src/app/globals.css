@@ -46,3 +46,12 @@ main {
     width: 100%;
   }
 }
+
+.article {
+}
+.article img {
+  @apply rounded-lg;
+}
+.article p {
+  @apply text-justify indent-8;
+}
