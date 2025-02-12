@@ -26,7 +26,7 @@ const config: Config = {
           eraseSpeed: 0.05,
           pauseBetween: 2
         },
-        'zh-tw': {
+        'zh': {
           words: ['軟體工程師', '研究者', '博士生'],
           writeSpeed: 0.05,
           eraseSpeed: 0.05,
