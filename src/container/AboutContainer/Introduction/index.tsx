@@ -141,6 +141,9 @@ const Introduction = () => {
         <div className="mt-6 text-lg prose space-y-7 dark:prose-invert">
           <p className="text-justify indent-8">{t('intro')}</p>
           <p className="text-justify">
+            <b>{t('highlight_title_current')}:</b> {t('highlight_content_current')}
+          </p>
+          <p className="text-justify">
             <b>{t('highlight_title_0')}:</b> {t('highlight_content_0')}
           </p>
           <p className="text-justify">

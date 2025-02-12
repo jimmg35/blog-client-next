@@ -16,23 +16,29 @@
     "Education": "學歷",
     "Work": "工作經歷",
     "Articles": "文章",
-    "Publications": "著作"
+    "Publications": "出版物"
   },
   "Introduction": {
     "A": "一個",
-    "paragraph1": "大家好，我是來自臺灣的家浚，對地理資訊科學（GIS）和遙測技術充滿熱情，擁有國立臺灣師範大學地理學系的碩士和學士學位。",
-    "paragraph2": "在學時期作為研究助理，我參與了空氣品質預測和地理空間應用的開發。在中華徵信所，我通過結合地理空間技術與內部算法，開發了自動化估價流程。"
+    "paragraph1": "大家好，我是來自臺灣的家浚，對地理資訊科學（GIS）、深度學習和遙測技術充滿熱情。我擁有國立臺灣師範大學地理學系的碩士和學士學位。在中華徵信所，我透過整合地理空間技術與內部演算法，開發了自動化估價流程。",
+    "paragraph2": "目前，我是佛羅里達州立大學地理學系的助教，未來幾年我將在佛州與Fotheringham教授合作，探索新的見解。"
   },
   "Educations": {
     "title": "學歷",
+    "phd_school_name": "佛羅里達州立大學",
+    "phd_major": "地理學博士",
+    "phd_start_year": "2025",
+    "phd_start_month": "一月",
+    "phd_end_year": "至今",
+    "phd_end_month": "至今",
     "graduate_school_name": "國立臺灣師範大學",
-    "graduate_major": "地理學研究所空間資訊組",
+    "graduate_major": "地理資訊科學碩士",
     "graduate_start_year": "2022",
     "graduate_start_month": "九月",
     "graduate_end_year": "2024",
     "graduate_end_month": "六月",
     "undergraduate_school_name": "國立臺灣師範大學",
-    "undergraduate_major": "地理學系",
+    "undergraduate_major": "地理學學士",
     "undergraduate_start_year": "2018",
     "undergraduate_start_month": "九月",
     "undergraduate_end_year": "2022",
@@ -41,19 +47,19 @@
   "Works": {
     "title": "工作經歷",
     "company_0": "中華徵信不動產估價師聯合事務所",
-    "role_0": "研究員",
+    "role_0": "Web GIS開發人員",
     "start_year_0": "2023",
     "start_month_0": "三月",
-    "end_year_0": "至今",
-    "end_month_0": "至今",
+    "end_year_0": "2024",
+    "end_month_0": "十二月",
     "company_1": "杰悉科技股份有限公司",
-    "role_1": "實習Web-GIS開發工程師",
+    "role_1": "GIS分析師與開發人員（兼職）",
     "start_year_1": "2020",
     "start_month_1": "三月",
     "end_year_1": "2022",
     "end_month_1": "十月",
     "company_2": "互動國際數位股份有限公司",
-    "role_2": "實習Web-GIS開發工程師",
+    "role_2": "GIS實習生（ESRI臺灣代理商）",
     "start_year_2": "2019",
     "start_month_2": "七月",
     "end_year_2": "2021",
@@ -62,31 +68,16 @@
     "linkedin": "LinkedIn"
   },
   "About": {
-    "Title": "我是家浚。我住在臺北，致力於",
-    "GIScience": "空間資訊科學",
-    "intro": "Wsp！感謝您的光臨。我是家浚，一位專業且有豐富經驗的空間資訊科學專業人士，熱切期待在未來的努力中繼續探索和貢獻。以下是關於我的一些亮點：",
-    "highlight_title_0": "研究助理",
-    "highlight_content_0": "國立臺灣師範大學，福爾摩沙衛星二號圖像應用分發中心（IADC）成員",
-    "highlight_title_1": "全端開發人員",
-    "highlight_content_1": "在臺北的<guidelines>中華徵信不動產估價師聯合事務所(CCIS)</guidelines>擔任系統開發人員",
-    "highlight_title_2": "全端開發人員",
-    "highlight_content_2": "遠端兼職技術人員於<guidelines>智紳數位文化事業(JSDC)</guidelines>"
-  },
-  "Publications": {
-    "Title": "我熱衷於與學術界分享我的研究發現。",
-    "Description": "這些是我的幾篇出版物，包括會議論文、期刊論文和會議演講。雖然這些不算多，但萬事起頭難，對吧？",
-    "Journal": "期刊論文",
-    "Conference": "研討會論文",
-    "Presentation": "研討會發表",
-    "Link": "外部連結"
-  },
-  "Articles": {
-    "Title": "我喜歡寫一些關於空間資訊的文章。",
-    "Description": "這些是我寫的一些文章，主要是關於空間資訊科學和期刊論文的閱讀心得。",
-    "Read": "閱讀文章",
-    "CategoryGIS": "地理資訊系統",
-    "CategoryGeneral": "一般文章",
-    "CategoryReview": "期刊閱讀",
-    "CategoryTech": "技術分享"
+    "Title": "我是家浚，目前居住在塔拉哈西，專注於",
+    "GIScience": "地理資訊科學",
+    "intro": "Wsp！感謝您的光臨。我是家浚，一位熱衷於GIS技術的學者，渴望在未來的職業生涯中繼續探索和貢獻地理資訊科學。以下是一些關於我的經歷：",
+    "highlight_title_current": "教學助理（現任）",
+    "highlight_content_current": "佛羅里達州立大學地理學博士生",
+    "highlight_title_0": "研究助理（結束）",
+    "highlight_content_0": "國立臺灣師範大學，福爾摩沙衛星二號影像應用分發中心（IADC）成員",
+    "highlight_title_1": "全端開發人員（結束）",
+    "highlight_content_1": "臺北<guidelines>中華徵信不動產估價師聯合事務所</guidelines>系統開發人員",
+    "highlight_title_2": "全端開發人員（結束）",
+    "highlight_content_2": "遠端兼職開發人員於<guidelines>智紳數位文化事業（JSDC）</guidelines>"
   }
 }
