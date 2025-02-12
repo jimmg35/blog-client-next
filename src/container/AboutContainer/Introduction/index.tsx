@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import Image from "next/legacy/image"
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 
 const Introduction = () => {
@@ -141,7 +141,8 @@ const Introduction = () => {
         <div className="mt-6 text-lg prose space-y-7 dark:prose-invert">
           <p className="text-justify indent-8">{t('intro')}</p>
           <p className="text-justify">
-            <b>{t('highlight_title_current')}:</b> {t('highlight_content_current')}
+            <b>{t('highlight_title_current')}:</b>{' '}
+            {t('highlight_content_current')}
           </p>
           <p className="text-justify">
             <b>{t('highlight_title_0')}:</b> {t('highlight_content_0')}

@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import { useLocale, useTranslations } from 'next-intl'
-import Image from "next/legacy/image"
+import Image from 'next/legacy/image'
 
 const Introduction = () => {
   const locale = useLocale()

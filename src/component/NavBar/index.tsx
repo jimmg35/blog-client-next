@@ -2,7 +2,7 @@ import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useTranslations } from 'next-intl'
 import { cookies } from 'next/headers'
-import Image from "next/legacy/image"
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import LocaleSwitcher from '../LocaleSwitcher'
 import ThemeSwitcher from '../ThemeSwitcher'

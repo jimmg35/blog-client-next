@@ -23,8 +23,7 @@ const PublicationContainer = () => {
                     description={
                       <span>
                         <span className="font-extrabold">Chang J. J.</span>,
-                        Tsung-Ni Liu,
-                        Chang K. C.
+                        Tsung-Ni Liu, Chang K. C.
                       </span>
                     }
                     link="https://www1.geo.ntnu.edu.tw/JGR/080_04.pdf"

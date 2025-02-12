@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from "next/legacy/image"
+import Image from 'next/legacy/image'
 
 const photos = [
   { src: '/images/photo_wall/phuquoc.jpg', rotate: true },

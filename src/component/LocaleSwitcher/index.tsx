@@ -2,7 +2,7 @@
 
 import { LanguageIcon } from '@heroicons/react/24/solid'
 import React from 'react'
-import Image from "next/legacy/image"
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
