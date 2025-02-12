@@ -126,7 +126,7 @@ const Introduction = () => {
         <div className="max-w-xs px-2.5 lg:max-w-none relative">
           <Image
             // src="/images/chiwawa.jpeg"
-            src="/favicon.svg"
+            src="/images/photo_wall/graduate.jpg"
             width={440}
             height={440}
             alt="avatar"
@@ -220,7 +220,7 @@ const Introduction = () => {
                   />
                 </g>
               </svg>
-              <span className="ml-4">jim.alderson.ca@gmail.com</span>
+              <span className="ml-4">jc24cf@fsu.edu</span>
             </a>
           </li>
         </ul>

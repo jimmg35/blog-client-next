@@ -12,7 +12,7 @@ const Introduction = () => {
         <div className="rounded-full w-20 border border-zinc-400">
           <Image
             // src="/images/chiwawa.jpeg"
-            src="/favicon.svg"
+            src="/images/jim.jpg"
             width={80}
             height={80}
             alt="avatar"

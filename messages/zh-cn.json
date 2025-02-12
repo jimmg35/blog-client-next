@@ -79,5 +79,22 @@
     "highlight_content_1": "台北<guidelines>中华征信不动产估价师联合事务所</guidelines>系统开发人员",
     "highlight_title_2": "全栈开发人员（已结束）",
     "highlight_content_2": "远程兼职开发人员于<guidelines>智绅数位文化事业（JSDC）</guidelines>"
+  },
+  "Publications": {
+    "Title": "我积极寻找机会与学术界分享我的研究成果。",
+    "Description": "这些是我的几篇出版物，包括会议论文、期刊论文和会议演讲。虽然目前数量不多，但每个人都是从零开始的，对吧？",
+    "Journal": "期刊论文",
+    "Conference": "会议论文",
+    "Presentation": "会议演讲",
+    "Link": "链接"
+  },
+  "Articles": {
+    "Title": "我也喜欢撰写文章并分享我对各种话题的想法。",
+    "Description": "这里是一些我写的文章，涵盖从 GIS 技术到期刊论文评析等各种主题。不过，目前我写的文章还不多，但我期待未来能分享更多内容。",
+    "Read": "阅读文章",
+    "CategoryGIS": "地理信息系统",
+    "CategoryGeneral": "一般文章",
+    "CategoryReview": "期刊评析",
+    "CategoryTech": "技术分享"
   }
 }

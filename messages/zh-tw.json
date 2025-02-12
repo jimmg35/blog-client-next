@@ -79,5 +79,22 @@
     "highlight_content_1": "臺北<guidelines>中華徵信不動產估價師聯合事務所</guidelines>系統開發人員",
     "highlight_title_2": "全端開發人員（結束）",
     "highlight_content_2": "遠端兼職開發人員於<guidelines>智紳數位文化事業（JSDC）</guidelines>"
+  },
+  "Publications": {
+    "Title": "我積極尋求機會與學術界分享我的研究發現。",
+    "Description": "這是我的幾篇出版物，包括研討會論文、期刊論文和研討會發表。雖然目前數量不多，但每個人都是從零開始的，對吧？",
+    "Journal": "期刊論文",
+    "Conference": "研討會論文",
+    "Presentation": "研討會發表",
+    "Link": "連結"
+  },
+  "Articles": {
+    "Title": "我也喜歡撰寫文章並分享我對各種議題的想法。",
+    "Description": "這裡是一些我寫的文章，涵蓋從 GIS 技術到期刊論文評析等各種主題。不過，目前我寫的文章還不多，但我期待未來能分享更多內容。",
+    "Read": "閱讀文章",
+    "CategoryGIS": "地理資訊系統",
+    "CategoryGeneral": "一般文章",
+    "CategoryReview": "期刊評析",
+    "CategoryTech": "技術分享"
   }
 }

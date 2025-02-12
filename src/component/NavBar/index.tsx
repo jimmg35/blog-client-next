@@ -30,7 +30,7 @@ const NavBar = ({
                   <div className="md:hidden h-10 w-10 rounded-full bg-base-100 p-0.5 backdrop-blur calcite-box">
                     <a href="/">
                       <Image
-                        src="/favicon.svg"
+                        src="/images/jim.jpg"
                         alt="avatar"
                         width={36}
                         height={36}

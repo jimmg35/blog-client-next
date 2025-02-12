@@ -19,13 +19,15 @@ const PublicationContainer = () => {
                 <Section category={t('Journal')}>
                   <Article
                     title="An Approach Integrating Spatial Factors via Convolutional Operations in Artificial Neural Network: Real Estate Appraisal as Case Study."
-                    event="Journal of Geographical Research. (Accepted)"
+                    event="Journal of Geographical Research, 80(71-100)."
                     description={
                       <span>
                         <span className="font-extrabold">Chang J. J.</span>,
+                        Tsung-Ni Liu,
                         Chang K. C.
                       </span>
                     }
+                    link="https://www1.geo.ntnu.edu.tw/JGR/080_04.pdf"
                   />
                   <Article
                     title="Estimation of space-time traffic corridor earthquake risk exposure based on cellular trajectory data."
@@ -37,7 +39,7 @@ const PublicationContainer = () => {
                         Chang K. C.
                       </span>
                     }
-                    link="https://www.geo.ntnu.edu.tw/wp-content/uploads/2022/03/745.pdf"
+                    link="https://www1.geo.ntnu.edu.tw/JGR/074_05.pdf"
                   />
                 </Section>
                 <Section category={t('Conference')}>
