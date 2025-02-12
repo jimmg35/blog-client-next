@@ -1,7 +1,7 @@
 import { AcademicCapIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 const Education = () => {
   const t = useTranslations('Educations')

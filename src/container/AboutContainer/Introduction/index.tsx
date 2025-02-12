@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 
 const Introduction = () => {
