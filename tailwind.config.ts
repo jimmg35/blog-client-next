@@ -21,13 +21,19 @@ const config: Config = {
     require('tailwind-typewriter')({
       wordsets: {
         en: {
-          words: ['software developer', 'researcher', 'student'],
+          words: ['software developer', 'researcher', 'Ph.D. student'],
           writeSpeed: 0.05,
           eraseSpeed: 0.05,
           pauseBetween: 2
         },
-        zh: {
-          words: ['軟體工程師', '研究者', '學生'],
+        "zh-tw": {
+          words: ['軟體工程師', '研究者', '博士生'],
+          writeSpeed: 0.05,
+          eraseSpeed: 0.05,
+          pauseBetween: 2
+        },
+        "zh-cn": {
+          words: ['软件工程师', '研究者', '博士生'],
           writeSpeed: 0.05,
           eraseSpeed: 0.05,
           pauseBetween: 2

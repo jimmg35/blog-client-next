@@ -26,7 +26,8 @@ const Introduction = () => {
           className={classNames({
             JobTitle: true,
             'type-en': locale === 'en',
-            'type-zh': locale === 'zh',
+            'type-zh': locale === 'zh-tw',
+            'type-zh-cn': locale === 'zh-cn',
             'type-ru': locale === 'ru'
           })}
         ></h1>

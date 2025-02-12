@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const getClientPathname = (url: string) => {
-  const match = url.match(/\/(zh|ru|en)\/(.*)/)
+  const match = url.match(/\/(zh-tw|zh-cn|ru|en)\/(.*)/)
   if (match) return `/${match[2]}`
   return '/'
 }
@@ -27,15 +27,19 @@ const LocaleSwitcher = () => {
       icon: <Image src="/icons/us.svg" width={24} height={24} alt="English" />
     },
     {
-      href: `/zh${pathname}`,
+      href: `/zh-tw${pathname}`,
       name: '繁體中文',
-      icon: <Image src="/icons/tw.svg" width={24} height={24} alt="English" />
+      icon: <Image src="/icons/tw.svg" width={24} height={24} alt="繁體中文" />
     },
-
+    {
+      href: `/zh-cn${pathname}`,
+      name: '简体中文',
+      icon: <Image src="/icons/cn.svg" width={24} height={24} alt="简体中文" />
+    },
     {
       href: `/ru${pathname}`,
       name: 'Русский',
-      icon: <Image src="/icons/ru.svg" width={24} height={24} alt="English" />
+      icon: <Image src="/icons/ru.svg" width={24} height={24} alt="Русский" />
     }
   ]
 
