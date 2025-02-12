@@ -1,11 +1,18 @@
 import { AcademicCapIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 const Education = () => {
   const t = useTranslations('Educations')
   const educations = [
+    {
+      company: t('phd_school_name'),
+      role: t('phd_major'),
+      start: t('phd_start_year'),
+      end: t('phd_end_year'),
+      icon: '/icons/fsu.png'
+    },
     {
       company: t('graduate_school_name'),
       role: t('graduate_major'),

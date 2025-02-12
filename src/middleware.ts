@@ -3,7 +3,7 @@ import { NextRequest } from 'next/server'
 
 export default function middleware(req: NextRequest) {
   const handleI18nRouting = createIntlMiddleware({
-    locales: ['en', 'zh', 'ru'],
+    locales: ['en', 'zh-tw', 'zh-cn', 'ru'],
     defaultLocale: 'en'
   })
   const response = handleI18nRouting(req)
@@ -13,5 +13,5 @@ export default function middleware(req: NextRequest) {
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(en|zh|ru)/:path*']
+  matcher: ['/', '/(en|zh-tw|zh-cn|ru)/:path*']
 }

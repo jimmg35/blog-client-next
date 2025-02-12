@@ -1,0 +1,100 @@
+{
+  "Index": {
+    "tabTitle": "嗨!我是家浚"
+  },
+  "Locale": {
+    "locale": "语系",
+    "en": "English",
+    "zh": "中文",
+    "ru": "Русский"
+  },
+  "Routes": {
+    "Menu": "菜单",
+    "Navigation": "导航",
+    "Home": "首页",
+    "About": "关于",
+    "Education": "学历",
+    "Work": "工作经历",
+    "Articles": "文章",
+    "Publications": "出版物"
+  },
+  "Introduction": {
+    "A": "一个",
+    "paragraph1": "大家好，我是来自台湾的家浚，对地理信息科学（GIS）、深度学习和遥感技术充满热情。我拥有国立台湾师范大学地理学系的硕士和学士学位。在中华征信所，我通过整合地理空间技术与内部算法，开发了自动化估价流程。",
+    "paragraph2": "目前，我是佛罗里达州立大学地理学系的助教，未来几年我将在佛州与 Fotheringham 教授合作，探索新的见解。"
+  },
+  "Educations": {
+    "title": "学历",
+    "phd_school_name": "佛罗里达州立大学",
+    "phd_major": "地理学博士",
+    "phd_start_year": "2025",
+    "phd_start_month": "一月",
+    "phd_end_year": "至今",
+    "phd_end_month": "至今",
+    "graduate_school_name": "国立台湾师范大学",
+    "graduate_major": "地理信息科学硕士",
+    "graduate_start_year": "2022",
+    "graduate_start_month": "九月",
+    "graduate_end_year": "2024",
+    "graduate_end_month": "六月",
+    "undergraduate_school_name": "国立台湾师范大学",
+    "undergraduate_major": "地理学学士",
+    "undergraduate_start_year": "2018",
+    "undergraduate_start_month": "九月",
+    "undergraduate_end_year": "2022",
+    "undergraduate_end_month": "六月"
+  },
+  "Works": {
+    "title": "工作经历",
+    "company_0": "中华征信不动产估价师联合事务所",
+    "role_0": "Web GIS 开发人员",
+    "start_year_0": "2023",
+    "start_month_0": "三月",
+    "end_year_0": "2024",
+    "end_month_0": "十二月",
+    "company_1": "杰悉科技股份有限公司",
+    "role_1": "GIS 分析师与开发人员（兼职）",
+    "start_year_1": "2020",
+    "start_month_1": "三月",
+    "end_year_1": "2022",
+    "end_month_1": "十月",
+    "company_2": "互动国际数位股份有限公司",
+    "role_2": "GIS 实习生（ESRI 台湾代理商）",
+    "start_year_2": "2019",
+    "start_month_2": "七月",
+    "end_year_2": "2021",
+    "end_month_2": "十月",
+    "checkout": "查看我的",
+    "linkedin": "LinkedIn"
+  },
+  "About": {
+    "Title": "我是家浚，目前居住在塔拉哈西，专注于",
+    "GIScience": "地理信息科学",
+    "intro": "Wsp！感谢您的光临。我是家浚，一位热衷于 GIS 技术的学者，渴望在未来的职业生涯中继续探索和贡献地理信息科学。以下是一些关于我的经历：",
+    "highlight_title_current": "教学助理（现任）",
+    "highlight_content_current": "佛罗里达州立大学地理学博士生",
+    "highlight_title_0": "研究助理（已结束）",
+    "highlight_content_0": "国立台湾师范大学，福尔摩沙卫星二号影像应用分发中心（IADC）成员",
+    "highlight_title_1": "全栈开发人员（已结束）",
+    "highlight_content_1": "台北<guidelines>中华征信不动产估价师联合事务所</guidelines>系统开发人员",
+    "highlight_title_2": "全栈开发人员（已结束）",
+    "highlight_content_2": "远程兼职开发人员于<guidelines>智绅数位文化事业（JSDC）</guidelines>"
+  },
+  "Publications": {
+    "Title": "我积极寻找机会与学术界分享我的研究成果。",
+    "Description": "这些是我的几篇出版物，包括会议论文、期刊论文和会议演讲。虽然目前数量不多，但每个人都是从零开始的，对吧？",
+    "Journal": "期刊论文",
+    "Conference": "会议论文",
+    "Presentation": "会议演讲",
+    "Link": "链接"
+  },
+  "Articles": {
+    "Title": "我也喜欢撰写文章并分享我对各种话题的想法。",
+    "Description": "这里是一些我写的文章，涵盖从 GIS 技术到期刊论文评析等各种主题。不过，目前我写的文章还不多，但我期待未来能分享更多内容。",
+    "Read": "阅读文章",
+    "CategoryGIS": "地理信息系统",
+    "CategoryGeneral": "一般文章",
+    "CategoryReview": "期刊评析",
+    "CategoryTech": "技术分享"
+  }
+}

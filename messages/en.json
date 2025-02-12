@@ -20,11 +20,17 @@
   },
   "Introduction": {
     "A": "A",
-    "paragraph1": "Hello, I'm Jim from Taiwan, passionate about Geographic Information Science (GIS) and remote sensing technology. I hold Master's and Bachelor's degrees in Geography from National Taiwan Normal University.",
-    "paragraph2": "As a research assistant, I worked on air quality prediction and geospatial applications. At CCIS Ltd., I developed automated appraisal processes by integrating geospatial technology with internal algorithms."
+    "paragraph1": "Hello, I'm Jim from Taiwan, passionate about Geographic Information Science (GIScience), deep learning, and remote sensing technology. I hold Master's and Bachelor's degrees in Geography from National Taiwan Normal University. At CCIS Ltd., I developed automated appraisal processes by integrating geospatial technology with internal algorithms.",
+    "paragraph2": "I'm currently a teaching assistant at Florida State University, Department of Geography. I'm gonna spend next few years in Florida to work with Dr.Fotheringham and discover new insights"
   },
   "Educations": {
     "title": "Academy",
+    "phd_school_name": "Florida State University",
+    "phd_major": "Ph.D. in Geography",
+    "phd_start_year": "2025",
+    "phd_start_month": "Jan",
+    "phd_end_year": "Present",
+    "phd_end_month": "Present",
     "graduate_school_name": "National Taiwan Normal University",
     "graduate_major": "Master in Geographic Information Science",
     "graduate_start_year": "2022",
@@ -44,8 +50,8 @@
     "role_0": "GIS specialist & developer",
     "start_year_0": "2023",
     "start_month_0": "March",
-    "end_year_0": "Present",
-    "end_month_0": "Present",
+    "end_year_0": "2024",
+    "end_month_0": "Dec",
     "company_1": "NADI System Corp.",
     "role_1": "GIS Analyst & Developer (Part-time)",
     "start_year_1": "2020",
@@ -53,7 +59,7 @@
     "end_year_1": "2022",
     "end_month_1": "Oct",
     "company_2": "Interactive Digital Technologies Inc.",
-    "role_2": "GIS Intern",
+    "role_2": "GIS Intern (Official agency of ESRI in Taiwan)",
     "start_year_2": "2019",
     "start_month_2": "July",
     "end_year_2": "2021",
@@ -62,14 +68,16 @@
     "linkedin": "LinkedIn"
   },
   "About": {
-    "Title": "I'm Jim. I live in Tapei, where I devote myself to the field of",
+    "Title": "I'm Jim. Currently live in Tallahassee, where I devote myself to the field of",
     "GIScience": "GIScience",
-    "intro": "Wsp! Thanks for stopping by. I’m Jim, a dedicated and experienced GIS professional eager to continue exploring and contributing to Geographic Information Science in my future endeavors. Some highlights about me and my activities:",
-    "highlight_title_0": "Research Assistant",
+    "intro": "Wsp! Thanks for stopping by. I’m Jim, a dedicated and experienced GIS professional eager to continue exploring and contributing to Geographic Information Science in my future career. Some highlights about me and my activities:",
+    "highlight_title_current": "Graduate Teaching Assistant (current)",
+    "highlight_content_current": "Ph.D. student at Florida State University, Department of Geography",
+    "highlight_title_0": "Research Assistant (end)",
     "highlight_content_0": "Member of National Taiwan Normal University, FORMOSAT-2 Image Application Distribute Center (IADC)",
-    "highlight_title_1": "Full-Stack Developer",
+    "highlight_title_1": "Full-Stack Developer (end)",
     "highlight_content_1": "System developer at <guidelines>CCIS Joint Appraisal Firm Ltd</guidelines> in Taipei.",
-    "highlight_title_2": "Fullstack Developer",
+    "highlight_title_2": "Fullstack Developer (end)",
     "highlight_content_2": "Part-time remote developer at <guidelines>JRShen Digital Culture (JSDC)</guidelines>"
   },
   "Publications": {
@@ -82,7 +90,7 @@
   },
   "Articles": {
     "Title": "I also enjoy writing articles and sharing my thoughts on various topics.",
-    "Description": "Here are some of my articles, which cover a wide range of topics, from GIS technology to journal paper review.",
+    "Description": "Here are some of my articles, which cover a wide range of topics, from GIS technology to journal paper review. However, I haven't written many articles yet, but I'm looking forward to sharing more in the future.",
     "Read": "Read article",
     "CategoryGIS": "GIS",
     "CategoryGeneral": "General",
