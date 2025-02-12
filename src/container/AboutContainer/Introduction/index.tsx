@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 
 const Introduction = () => {
@@ -126,7 +126,7 @@ const Introduction = () => {
         <div className="max-w-xs px-2.5 lg:max-w-none relative">
           <Image
             // src="/images/chiwawa.jpeg"
-            src="/favicon.svg"
+            src="/images/photo_wall/graduate.jpg"
             width={440}
             height={440}
             alt="avatar"
@@ -140,6 +140,10 @@ const Introduction = () => {
         </h1>
         <div className="mt-6 text-lg prose space-y-7 dark:prose-invert">
           <p className="text-justify indent-8">{t('intro')}</p>
+          <p className="text-justify">
+            <b>{t('highlight_title_current')}:</b>{' '}
+            {t('highlight_content_current')}
+          </p>
           <p className="text-justify">
             <b>{t('highlight_title_0')}:</b> {t('highlight_content_0')}
           </p>
@@ -217,7 +221,7 @@ const Introduction = () => {
                   />
                 </g>
               </svg>
-              <span className="ml-4">jim.alderson.ca@gmail.com</span>
+              <span className="ml-4">jc24cf@fsu.edu</span>
             </a>
           </li>
         </ul>

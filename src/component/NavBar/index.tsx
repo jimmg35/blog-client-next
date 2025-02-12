@@ -2,7 +2,7 @@ import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useTranslations } from 'next-intl'
 import { cookies } from 'next/headers'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import LocaleSwitcher from '../LocaleSwitcher'
 import ThemeSwitcher from '../ThemeSwitcher'
@@ -30,7 +30,7 @@ const NavBar = ({
                   <div className="md:hidden h-10 w-10 rounded-full bg-base-100 p-0.5 backdrop-blur calcite-box">
                     <a href="/">
                       <Image
-                        src="/favicon.svg"
+                        src="/images/jim.jpg"
                         alt="avatar"
                         width={36}
                         height={36}

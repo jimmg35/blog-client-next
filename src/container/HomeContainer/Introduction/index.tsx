@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import { useLocale, useTranslations } from 'next-intl'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 const Introduction = () => {
   const locale = useLocale()
@@ -12,7 +12,7 @@ const Introduction = () => {
         <div className="rounded-full w-20 border border-zinc-400">
           <Image
             // src="/images/chiwawa.jpeg"
-            src="/favicon.svg"
+            src="/images/jim.jpg"
             width={80}
             height={80}
             alt="avatar"
@@ -26,7 +26,8 @@ const Introduction = () => {
           className={classNames({
             JobTitle: true,
             'type-en': locale === 'en',
-            'type-zh': locale === 'zh',
+            'type-zh': locale === 'zh-tw',
+            'type-zh-cn': locale === 'zh-cn',
             'type-ru': locale === 'ru'
           })}
         ></h1>
