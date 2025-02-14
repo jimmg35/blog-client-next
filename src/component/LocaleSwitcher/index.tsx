@@ -2,7 +2,7 @@
 
 import { LanguageIcon } from '@heroicons/react/24/solid'
 import React from 'react'
-import Image from 'next/legacy/image'
+// import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -23,23 +23,23 @@ const LocaleSwitcher = () => {
   const locales = [
     {
       href: `/en${pathname}`,
-      name: 'English',
-      icon: <Image src="/icons/us.svg" width={24} height={24} alt="English" />
+      name: 'English'
+      // icon: <Image src="/icons/us.svg" width={24} height={24} alt="English" />
     },
     {
       href: `/zh-tw${pathname}`,
-      name: '繁體中文',
-      icon: <Image src="/icons/tw.svg" width={24} height={24} alt="繁體中文" />
+      name: '繁體中文'
+      // icon: <Image src="/icons/tw.svg" width={24} height={24} alt="繁體中文" />
     },
     {
       href: `/zh-cn${pathname}`,
-      name: '简体中文',
-      icon: <Image src="/icons/cn.svg" width={24} height={24} alt="简体中文" />
+      name: '简体中文'
+      // icon: <Image src="/icons/cn.svg" width={24} height={24} alt="简体中文" />
     },
     {
       href: `/ru${pathname}`,
-      name: 'Русский',
-      icon: <Image src="/icons/ru.svg" width={24} height={24} alt="Русский" />
+      name: 'Русский'
+      // icon: <Image src="/icons/ru.svg" width={24} height={24} alt="Русский" />
     }
   ]
 
@@ -74,7 +74,7 @@ const LocaleSwitcher = () => {
                     data-headlessui-state="open"
                     href={locale.href}
                   >
-                    {locale.icon}
+                    {/* {locale.icon} */}
                     <span>{locale.name}</span>
                   </Link>
                 </li>

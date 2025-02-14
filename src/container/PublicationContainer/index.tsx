@@ -26,7 +26,7 @@ const PublicationContainer = () => {
                         Tsung-Ni Liu, Chang K. C.
                       </span>
                     }
-                    link="https://www1.geo.ntnu.edu.tw/JGR/080_04.pdf"
+                    link="https://www.researchgate.net/publication/388327351_An_Approach_Integrating_Spatial_Factors_through_Convolutional_Operations_in_Artificial_Neural_Networks_A_Case_Study_of_Real_Estate_Appraisal"
                   />
                   <Article
                     title="Estimation of space-time traffic corridor earthquake risk exposure based on cellular trajectory data."
